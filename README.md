@@ -24,6 +24,7 @@ Static single-page site. No build step.
 | `icon.png` | ↗↗ brand mark (nav, footer, final CTA) |
 | `favicon.png` | Browser tab icon |
 | `memes.jpg` | Meme collage grid |
+| `forge.js` | In-browser meme forge — caption, templates, PNG download |
 | `lockup.png` | AI/MAXXI text lockup (unused, kept for reference) |
 | `deploy.py` | Manual deploy helper — pushes these files to Vercel via API |
 

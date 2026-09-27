@@ -3,7 +3,7 @@ import base64, json, os, sys, urllib.request
 TOKEN = os.environ["VERCEL_TOKEN"]
 API = "https://api.vercel.com"
 SITE = os.path.expanduser("~/workspace/aimaxxi-site")
-FILES = ["index.html", "icon.png", "favicon.png", "memes.jpg", "lockup.png", "hero-bg.jpg"]
+FILES = ["index.html", "icon.png", "favicon.png", "memes.jpg", "forge.js", "lockup.png", "hero-bg.jpg"]
 TEAM_ID = "team_4LdhU9CgojF88iSArTiNSLVu"
 
 def req(method, path, body=None):

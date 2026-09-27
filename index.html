@@ -172,6 +172,69 @@
   @media (hover:hover){.memes img{transition:filter .4s}.memes img:hover{filter:grayscale(0) contrast(1)}}
   .memes .cap{font-family:var(--m);font-size:11px;letter-spacing:.24em;color:var(--mut);margin-top:16px;line-height:2}
 
+  .forge{margin-top:64px}
+  .forge .sec-sub{margin-bottom:36px}
+  .forge-lab{font-family:var(--m);font-size:11px;letter-spacing:.34em;color:var(--mut);margin:0 0 14px}
+  .forge-temps{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 40px}
+  .forge-chip{position:relative;display:block;flex:1 1 104px;max-width:148px;border:1px solid var(--line);padding:12px 12px 14px;background:var(--bg);cursor:pointer;color:var(--ink);transition:border-color .2s,transform .2s;user-select:none;-webkit-user-select:none}
+  .forge-chip:has(input:checked){border-color:var(--ink)}
+  .forge-chip input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  .forge-thumb{display:flex;align-items:center;justify-content:center;height:52px;margin-bottom:10px;border:1px solid var(--line);background:#000;font-family:var(--d);font-size:22px;letter-spacing:.04em;line-height:1;color:var(--ink)}
+  .forge-thumb-out{color:transparent;-webkit-text-stroke:1px var(--ink);font-size:28px}
+  .forge-thumb-tape{font-family:var(--m);font-size:10px;letter-spacing:.2em;color:var(--mut)}
+  .forge-thumb-crt{color:#7dff9a;font-family:var(--m);font-size:11px;letter-spacing:.2em}
+  .forge-thumb-hero{background:linear-gradient(180deg,rgba(5,5,5,.15),rgba(5,5,5,.9)),#242424;font-size:18px}
+  .forge-thumb-list{font-size:26px;letter-spacing:.12em;color:var(--mut)}
+  .forge-thumb-pillar{font-size:28px}
+  .forge-thumb-stamp{border-style:dashed;font-size:16px;color:var(--mut)}
+  .forge-chip-name{display:block;font-family:var(--m);font-size:11px;letter-spacing:.2em}
+  .forge-chip-sel{display:none;font-family:var(--m);font-size:9px;letter-spacing:.22em;color:var(--mut);margin-top:8px}
+  .forge-chip:has(input:checked) .forge-chip-sel{display:block}
+  @media (hover:hover){.forge-chip:hover{transform:translateY(-2px);border-color:rgba(244,244,240,.5)}}
+  .forge-stage{display:grid;grid-template-columns:minmax(260px,540px) 1fr;gap:40px;align-items:start}
+  .forge-preview{position:relative}
+  .forge-preview canvas{width:100%;max-width:540px;height:auto;display:block;border:1px solid var(--line);background:#000}
+  .forge-preview.is-drop canvas{outline:2px solid var(--ink);outline-offset:3px}
+  .forge-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;white-space:nowrap}
+  .forge-controls{min-width:0}
+  .forge-field{width:100%;min-height:48px;font-size:16px;line-height:1.4;background:var(--bg);color:var(--ink);border:1px solid var(--line);font-family:var(--m);padding:12px 14px;margin:0 0 18px}
+  .forge-select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 20px) calc(50% - 3px),calc(100% - 14px) calc(50% - 3px);background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+  .forge-field:focus-visible,.forge-chip:has(input:focus-visible),.forge-pillar:has(input:focus-visible),.forge button:focus-visible,.forge a.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+  .forge-pane{display:none;margin:0 0 18px}
+  .forge-pane.on{display:block}
+  .forge-pillars{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .forge-pillar{background:var(--bg);padding:18px 16px;cursor:pointer;display:block;position:relative;color:var(--ink)}
+  .forge-pillar:has(input:checked){background:#0d0d0d;box-shadow:inset 0 0 0 1px var(--ink)}
+  .forge-pillar input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  .forge-pillar-num{display:block;font-family:var(--m);font-size:10px;letter-spacing:.3em;color:var(--faint);margin-bottom:8px}
+  .forge-pillar-name{display:block;font-family:var(--d);font-size:18px;letter-spacing:.03em}
+  .forge-drop{border:1px dashed var(--line);padding:22px 18px;text-align:center}
+  .forge-drop p{font-family:var(--m);font-size:11px;letter-spacing:.18em;color:var(--mut);margin-bottom:16px;line-height:1.8}
+  .forge-file{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+  .forge-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+  .forge-actions .btn{cursor:pointer}
+  .forge button.btn-solid{border:none}
+  .forge button.btn-ghost,.forge a.btn-ghost{background:transparent}
+  .forge .btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+  .forge-hint{font-family:var(--m);font-size:11px;letter-spacing:.18em;color:var(--mut);margin-top:14px;line-height:1.8}
+  .forge-err{font-family:var(--m);font-size:11px;letter-spacing:.16em;color:var(--ink);margin-top:12px;min-height:1.2em}
+  .forge-noscript{font-family:var(--m);font-size:12px;letter-spacing:.2em;border:1px solid var(--line);padding:18px;margin-bottom:24px}
+  @media (prefers-reduced-motion:reduce){.forge-chip:hover{transform:none}}
+  @media (max-width:900px){
+    .forge-stage{grid-template-columns:1fr}
+    .forge-preview canvas{max-width:100%}
+  }
+  @media (max-width:640px){
+    .forge{margin-top:48px}
+    .forge-temps{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:10px}
+    .forge-chip{flex:0 0 auto;min-width:96px;max-width:120px}
+    .forge-actions{flex-direction:column}
+    .forge-actions .btn{width:100%;padding:19px 20px}
+    .forge-pillars{grid-template-columns:1fr}
+    .forge-lab{letter-spacing:.22em}
+    .forge-drop .btn{width:100%;padding:19px 20px}
+  }
+
   /* ---------- final ---------- */
   .final{text-align:center;padding:132px 0}
   .final .mark{width:54px;height:auto;margin:0 auto 30px;display:block}
@@ -379,7 +442,84 @@
     <div class="sec-title rv">THE MEMES</div>
     <div class="sec-sub rv">DEPLOYED ACROSS EVERY TIMELINE.</div>
     <img class="rv" src="memes.jpg" alt="AI/MAXXI memes" loading="lazy" />
-    <div class="cap rv">HOVER TO UNLEASH FULL COLOR — DESKTOP ONLY. MOBILE STAYS TACTICAL. ↗</div>
+
+    <div id="forge" class="forge rv" role="region" aria-labelledby="forge-title">
+      <div class="sec-kick">MINT THE MEMES <span class="arw">↗</span></div>
+      <div class="sec-title" id="forge-title">THE FORGE</div>
+      <div class="sec-sub">ONE CAPTION. ONE MARK. TRANSMIT.</div>
+      <noscript class="forge-noscript">ENABLE JAVASCRIPT TO MINT</noscript>
+
+      <div class="forge-lab" id="forge-temp-lab">TEMPLATE</div>
+      <div class="forge-temps" id="forge-temps" role="radiogroup" aria-labelledby="forge-temp-lab">
+        <label class="forge-chip"><input type="radio" name="forge-t" value="flag" checked /><span class="forge-thumb" aria-hidden="true">↗↗</span><span class="forge-chip-name">FLAG</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="outline" /><span class="forge-thumb forge-thumb-out" aria-hidden="true">↗↗</span><span class="forge-chip-name">OUTLINE</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="tape" /><span class="forge-thumb forge-thumb-tape" aria-hidden="true">——</span><span class="forge-chip-name">TAPE</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="crt" /><span class="forge-thumb forge-thumb-crt" aria-hidden="true">CRT</span><span class="forge-chip-name">CRT</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="hero" /><span class="forge-thumb forge-thumb-hero" aria-hidden="true">H</span><span class="forge-chip-name">HERO</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="list" /><span class="forge-thumb forge-thumb-list" aria-hidden="true">≡</span><span class="forge-chip-name">LIST</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="pillar" /><span class="forge-thumb forge-thumb-pillar" aria-hidden="true">M</span><span class="forge-chip-name">PILLAR</span><span class="forge-chip-sel">SELECTED</span></label>
+        <label class="forge-chip"><input type="radio" name="forge-t" value="stamp" /><span class="forge-thumb forge-thumb-stamp" aria-hidden="true">+</span><span class="forge-chip-name">STAMP</span><span class="forge-chip-sel">SELECTED</span></label>
+      </div>
+
+      <div class="forge-stage">
+        <div class="forge-preview" id="forge-preview">
+          <canvas id="forge-cv" width="1080" height="1080" role="img" aria-label="AI/MAXXI meme, FLAG template"></canvas>
+          <p class="forge-sr" id="forge-sr" aria-live="polite">10x is cowardice. we want 1,000,000x.</p>
+        </div>
+        <div class="forge-controls">
+          <div id="forge-cap-pane" class="forge-pane on">
+            <label class="forge-lab" for="forge-cap">CAPTION</label>
+            <select id="forge-cap" class="forge-field forge-select">
+              <option value="0">10x is cowardice. we want 1,000,000x.</option>
+              <option value="1">if it can be automated, automate it.</option>
+              <option value="2">if it can be scaled, scale it.</option>
+              <option value="3">if it can be memed, meme it.</option>
+              <option value="4">no brakes. no ceilings.</option>
+              <option value="5">no vibes left unoptimized.</option>
+              <option value="6">intelligence is the ultimate resource.</option>
+              <option value="7">memes are the transmission layer.</option>
+              <option value="8">the decels are organized. so are we.</option>
+              <option value="9">stop optimizing. start maxxing.</option>
+              <option value="10">maximum compute. maximum memes.</option>
+              <option value="custom">CUSTOM</option>
+            </select>
+          </div>
+          <div id="forge-custom-pane" class="forge-pane">
+            <label class="forge-lab" for="forge-custom">CUSTOM CAPTION</label>
+            <input id="forge-custom" class="forge-field" type="text" maxlength="96" autocomplete="off" placeholder="10x is cowardice." />
+          </div>
+          <div id="forge-pillar-pane" class="forge-pane">
+            <div class="forge-lab" id="forge-p-lab">PILLAR</div>
+            <div class="forge-pillars" id="forge-pillars" role="radiogroup" aria-labelledby="forge-p-lab">
+              <label class="forge-pillar"><input type="radio" name="forge-p" value="0" /><span class="forge-pillar-num">01</span><span class="forge-pillar-name">MAXIMUM COMPUTE</span></label>
+              <label class="forge-pillar"><input type="radio" name="forge-p" value="1" /><span class="forge-pillar-num">02</span><span class="forge-pillar-name">MAXIMUM INTELLIGENCE</span></label>
+              <label class="forge-pillar"><input type="radio" name="forge-p" value="2" /><span class="forge-pillar-num">03</span><span class="forge-pillar-name">MAXIMUM AGENTS</span></label>
+              <label class="forge-pillar"><input type="radio" name="forge-p" value="3" /><span class="forge-pillar-num">04</span><span class="forge-pillar-name">MAXIMUM ROBOTS</span></label>
+              <label class="forge-pillar"><input type="radio" name="forge-p" value="4" /><span class="forge-pillar-num">05</span><span class="forge-pillar-name">MAXIMUM ENERGY</span></label>
+              <label class="forge-pillar"><input type="radio" name="forge-p" value="5" checked /><span class="forge-pillar-num">06</span><span class="forge-pillar-name">MAXIMUM MEMES</span></label>
+            </div>
+          </div>
+          <div id="forge-stamp-pane" class="forge-pane">
+            <div class="forge-lab">IMAGE</div>
+            <div class="forge-drop">
+              <p>DROP A FACE. STAMP THE MARK.</p>
+              <input id="forge-file" class="forge-file" type="file" accept="image/*" tabindex="-1" />
+              <button type="button" class="btn btn-ghost" id="forge-file-btn">CHOOSE IMAGE ↗</button>
+            </div>
+          </div>
+          <div class="forge-actions">
+            <button type="button" class="btn btn-solid" id="forge-dl">DOWNLOAD PNG ↗</button>
+            <button type="button" class="btn btn-ghost" id="forge-share">SHARE ↗</button>
+            <button type="button" class="btn btn-ghost" id="forge-copy">COPY CAPTION</button>
+            <a class="btn btn-ghost" id="forge-x" href="https://twitter.com/intent/tweet?text=10x%20is%20cowardice.%20we%20want%201%2C000%2C000x.%20https%3A%2F%2Faimaxxi.com%2F%23memes%20%E2%86%97%E2%86%97" target="_blank" rel="noopener">POST TO X ↗</a>
+          </div>
+          <p class="forge-hint">DOWNLOAD THE PNG. ATTACH IT. TRANSMIT.</p>
+          <p class="forge-err" id="forge-err" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cap rv">HOVER THE COLLAGE FOR FULL COLOR — DESKTOP ONLY. THEN TRANSMIT. ↗</div>
   </div>
 </section>
 
@@ -444,6 +584,7 @@
     }
   });
 </script>
+<script src="forge.js" defer></script>
 
 </body>
 </html>
