@@ -364,9 +364,25 @@
   }
 
   function loadIcon() {
-    if (iconImg) return;
+    if (iconImg || iconImg === false) return;
     var im = new Image();
-    im.onload = function () { iconImg = im; requestDraw(); };
+    im.onload = function () {
+      var c = document.createElement('canvas');
+      c.width = im.naturalWidth || im.width;
+      c.height = im.naturalHeight || im.height;
+      var x = c.getContext('2d');
+      x.drawImage(im, 0, 0);
+      try {
+        var id = x.getImageData(0, 0, c.width, c.height), d = id.data, i;
+        for (i = 0; i < d.length; i += 4) {
+          if (d[i] < 22 && d[i + 1] < 22 && d[i + 2] < 22) d[i + 3] = 0;
+        }
+        x.putImageData(id, 0, 0);
+      } catch (e) {}
+      iconImg = c;
+      requestDraw();
+    };
+    im.onerror = function () { iconImg = false; };
     im.src = 'icon.png';
   }
   function loadHero() {

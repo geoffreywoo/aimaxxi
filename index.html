@@ -172,14 +172,14 @@
   @media (hover:hover){.memes img{transition:filter .4s}.memes img:hover{filter:grayscale(0) contrast(1)}}
   .memes .cap{font-family:var(--m);font-size:11px;letter-spacing:.24em;color:var(--mut);margin-top:16px;line-height:2}
 
-  .forge{margin-top:64px}
+  .forge{margin-top:64px;scroll-margin-top:92px}
   .forge .sec-sub{margin-bottom:36px}
   .forge-lab{font-family:var(--m);font-size:11px;letter-spacing:.34em;color:var(--mut);margin:0 0 14px}
   .forge-temps{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 40px}
-  .forge-chip{position:relative;display:block;flex:1 1 104px;max-width:148px;border:1px solid var(--line);padding:12px 12px 14px;background:var(--bg);cursor:pointer;color:var(--ink);transition:border-color .2s,transform .2s;user-select:none;-webkit-user-select:none}
+  .forge-chip{position:relative;display:block;flex:1 1 104px;max-width:148px;border:1px solid var(--line);padding:12px 12px 14px;background:var(--bg);cursor:pointer;color:var(--ink);transition:border-color .2s,transform .2s;user-select:none;-webkit-user-select:none;scroll-margin-top:90px}
   .forge-chip:has(input:checked){border-color:var(--ink)}
   .forge-chip input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-  .forge-thumb{display:flex;align-items:center;justify-content:center;height:52px;margin-bottom:10px;border:1px solid var(--line);background:#000;font-family:var(--d);font-size:22px;letter-spacing:.04em;line-height:1;color:var(--ink)}
+  .forge-thumb{display:flex;align-items:center;justify-content:center;height:52px;margin-bottom:10px;border:1px solid var(--line);background:#000;font-family:var(--d);font-size:22px;letter-spacing:.04em;line-height:1;color:var(--ink);pointer-events:none}
   .forge-thumb-out{color:transparent;-webkit-text-stroke:1px var(--ink);font-size:28px}
   .forge-thumb-tape{font-family:var(--m);font-size:10px;letter-spacing:.2em;color:var(--mut)}
   .forge-thumb-crt{color:#7dff9a;font-family:var(--m);font-size:11px;letter-spacing:.2em}
