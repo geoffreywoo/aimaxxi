@@ -26,6 +26,10 @@ Static single-page site. No build step.
 | `memes.jpg` | Meme collage grid |
 | `lockup.png` | AI/MAXXI text lockup (unused, kept for reference) |
 | `deploy.py` | Manual deploy helper — pushes these files to Vercel via API |
+| `enlist.js` | Enlistment card editor — pillar picker, canvas export, share |
+| `og.png` | Homepage Open Graph / Twitter card image (1200×630) |
+| `cards/` | Per-pillar share pages and matching Open Graph PNGs |
+| `scripts/generate-cards.mjs` | One-off generator for `og.png` and `cards/*.png` from the same canvas renderer |
 
 
 ## Deploy
