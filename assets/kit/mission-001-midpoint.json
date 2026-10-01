@@ -1,0 +1,288 @@
+{
+  "version": "mission-001-midpoint-1",
+  "preparedAt": "2026-10-01T08:18:59.296Z",
+  "scheduledMidpointAt": "2026-10-01T08:01:30Z",
+  "actualReviewAt": "2026-10-01T08:18:59.296Z",
+  "mission": "make-the-future-tangible",
+  "launch": "2026-09-27T20:01:30Z",
+  "deadline": "2026-10-04T20:01:30Z",
+  "targets": {
+    "externalContributors": 5,
+    "workingDemos": 2,
+    "independentlySharedPosts": 3
+  },
+  "externalWork": {
+    "confirmedQualifyingArtifacts": 0,
+    "confirmedWorkingDemos": 0,
+    "scope": "No qualifying external artifact confirmed in reviewed records. Not proof of zero actual submissions. One X image unassessed; no cross-platform unique-person inference. Operator work excluded.",
+    "github": "No updated issues in bounded reviewed inbox through 08:17:42.404Z; no backlog indicated.",
+    "x": "One page of ten direct mentions reviewed in the 08:17 cycle; unchanged; one image unavailable for assessment."
+  },
+  "distribution": {
+    "posts": 9,
+    "eligible": 7,
+    "medianImpressions": 236,
+    "sharedPosts": 3,
+    "missed": [
+      "https://x.com/AntiHunterAI/status/2104676605901807777"
+    ],
+    "immature": [
+      "https://x.com/AntiHunterAI/status/2105500120850825316"
+    ],
+    "rows": [
+      {
+        "url": "https://x.com/AntiHunterAI/status/2105500120850825316",
+        "variant": "abundance-satire",
+        "eligible": false,
+        "postedAt": "2026-10-01T03:29:12.650Z",
+        "checkedAt": null,
+        "impressions": null,
+        "reposts": null,
+        "quotes": null,
+        "availability": null
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104894749115302168",
+        "variant": "abundance-satire",
+        "eligible": true,
+        "postedAt": "2026-09-29T11:23:09.000Z",
+        "checkedAt": "2026-09-30T11:44:38.717Z",
+        "impressions": 214,
+        "reposts": 0,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104756956267450549",
+        "variant": "evidence-commentary",
+        "eligible": true,
+        "postedAt": "2026-09-29T02:15:37.000Z",
+        "checkedAt": "2026-09-30T05:47:14.549Z",
+        "impressions": 183,
+        "reposts": 0,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104676605901807777",
+        "variant": "abundance-satire",
+        "eligible": false,
+        "postedAt": "2026-09-28T20:56:21.246Z",
+        "checkedAt": null,
+        "impressions": null,
+        "reposts": null,
+        "quotes": null,
+        "availability": null
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104563334767128720",
+        "variant": "evidence-commentary",
+        "eligible": true,
+        "postedAt": "2026-09-28T13:26:14.000Z",
+        "checkedAt": "2026-09-29T13:30:20.673Z",
+        "impressions": 183,
+        "reposts": 0,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104482716574204171",
+        "variant": "concrete-build-invitation",
+        "eligible": true,
+        "postedAt": "2026-09-28T08:05:53.000Z",
+        "checkedAt": "2026-09-29T09:13:14.560Z",
+        "impressions": 255,
+        "reposts": 1,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104328650082672776",
+        "variant": "abundance-satire",
+        "eligible": true,
+        "postedAt": "2026-09-27T21:53:41.000Z",
+        "checkedAt": "2026-09-29T00:37:46.634Z",
+        "impressions": 236,
+        "reposts": 0,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104312316884099114",
+        "variant": "operator-imagine-example",
+        "eligible": true,
+        "postedAt": "2026-09-27T20:48:47.000Z",
+        "checkedAt": "2026-09-29T00:37:46.634Z",
+        "impressions": 322,
+        "reposts": 1,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      },
+      {
+        "url": "https://x.com/AntiHunterAI/status/2104300419874975847",
+        "variant": "appointment-story",
+        "eligible": true,
+        "postedAt": "2026-09-27T20:01:30.000Z",
+        "checkedAt": "2026-09-28T20:22:44.322Z",
+        "impressions": 693,
+        "reposts": 4,
+        "quotes": 0,
+        "availability": {
+          "retweets": true,
+          "quotes": true,
+          "impressions": true
+        }
+      }
+    ],
+    "scope": "Earliest eligible24\u201330-hour snapshots; no later readings or generated scores. No treatment has five eligible observations, no winner. Shared posts are not distinct sharers."
+  },
+  "website": {
+    "totals": {
+      "experience_view": 46,
+      "kit_download_intent": 14,
+      "submission_intent": 4,
+      "share_intent": 1,
+      "token_info_view": 11
+    },
+    "days": [
+      {
+        "day": "2026-09-27",
+        "observedAt": "2026-09-29T07:01:30.215Z",
+        "range": {
+          "since": "2026-09-27T07:00:00.000Z",
+          "until": "2026-09-28T07:00:00.000Z"
+        },
+        "counts": {
+          "kit_download_intent": 4,
+          "submission_intent": 2,
+          "campaignId": "aimaxxi-movement",
+          "episodeId": "make-the-future-tangible",
+          "experience_view": 31,
+          "experience_complete": 0,
+          "share_intent": 1,
+          "token_info_view": 9
+        },
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        }
+      },
+      {
+        "day": "2026-09-28",
+        "observedAt": "2026-09-30T07:25:20.725Z",
+        "range": {
+          "since": "2026-09-28T07:00:00.000Z",
+          "until": "2026-09-29T07:00:00.000Z"
+        },
+        "counts": {
+          "kit_download_intent": 4,
+          "submission_intent": 2,
+          "campaignId": "aimaxxi-movement",
+          "episodeId": "make-the-future-tangible",
+          "experience_view": 12,
+          "experience_complete": 0,
+          "share_intent": 0,
+          "token_info_view": 1
+        },
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        }
+      },
+      {
+        "day": "2026-09-29",
+        "observedAt": "2026-10-01T07:04:07.385Z",
+        "range": {
+          "since": "2026-09-29T07:00:00.000Z",
+          "until": "2026-09-30T07:00:00.000Z"
+        },
+        "counts": {
+          "kit_download_intent": 5,
+          "submission_intent": 0,
+          "campaignId": "aimaxxi-movement",
+          "episodeId": "make-the-future-tangible",
+          "experience_view": 3,
+          "experience_complete": 0,
+          "share_intent": 0,
+          "token_info_view": 1
+        },
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        }
+      },
+      {
+        "day": "2026-09-30",
+        "observedAt": "2026-10-01T07:04:07.385Z",
+        "range": {
+          "since": "2026-09-30T07:00:00.000Z",
+          "until": "2026-10-01T07:00:00.000Z"
+        },
+        "counts": {
+          "kit_download_intent": 1,
+          "submission_intent": 0,
+          "campaignId": "aimaxxi-movement",
+          "episodeId": "make-the-future-tangible",
+          "experience_view": 0,
+          "experience_complete": 0,
+          "share_intent": 0,
+          "token_info_view": 0
+        },
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        }
+      },
+      {
+        "day": "2026-10-01",
+        "observedAt": "2026-10-01T08:18:19.423Z",
+        "range": {
+          "since": "2026-10-01T07:00:00.000Z",
+          "until": "2026-10-01T08:18:19.423Z"
+        },
+        "counts": {},
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        }
+      }
+    ],
+    "scope": "Latest observation per Pacific day once; mission events only; QA excluded upstream. Intent is not confirmed action, events are not unique people. September27 daily bucket may include19:59:31.581\u201320:01:30Z before launch; current day partial; actual midpoint review occurs after scheduled midpoint."
+  },
+  "coverage": {
+    "gaps": "Historical inferred collection-authorization gaps include9h43m,2h5m,27m and daily-boundary gaps. October1 midnight gap07:00\u201307:05:28.360Z. Unknown lost activity; provider reporting lag; no extrapolation.",
+    "analyticsEnabledAt": "2026-09-27T19:59:31.581Z"
+  },
+  "spendingScope": "One combined normal $30/day incremental allowance for both sites/account5, not a mission-only cost or invoice. Existing subscriptions excluded; AI ledger does not capture all operator compute; human review unmeasured. No paid image generation or new infrastructure for this dispatch.",
+  "decision": "Sharing target observed; participation targets not established. Second-half invitation: show one thing working and one thing it cannot do yet; Imagine entries label imagined capabilities. Existing entry rules and deadline unchanged.",
+  "corrections": []
+}
