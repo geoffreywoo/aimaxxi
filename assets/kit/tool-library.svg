@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs><g id="drill"><path d="M0 12 Q0 0 12 0 H92 L108 12 V44 H12 Q0 44 0 32Z" fill="#369d89"/><path d="M108 8 H127 V36 H108 M127 18 H149 V25 H127" fill="#213f40"/><path d="M52 44 H83 L75 105 H49Z" fill="#369d89"/><path d="M51 60 L61 68 L70 59 L81 66" fill="none" stroke="#ef834d" stroke-width="6"/><rect x="39" y="100" width="47" height="14" rx="3" fill="#213f40"/></g></defs>
+<rect width="1200" height="800" fill="#f2efe6"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#173537">
+<text x="48" y="57" font-size="18" letter-spacing="3">AI/MAXXI · IMAGINED / 2040</text>
+<text x="48" y="120" font-size="48" font-weight="700">A tool library with a night shift.</text>
+<rect x="48" y="165" width="352" height="495" rx="12" fill="#19383a"/><rect x="424" y="165" width="352" height="495" rx="12" fill="#d8e2d5"/><rect x="800" y="165" width="352" height="495" rx="12" fill="#ead5b3"/>
+<g fill="#f2efe6"><text x="72" y="205" font-size="16" letter-spacing="2">01 / EVENING</text><text x="72" y="245" font-size="26" font-weight="700">RETURN BROKEN.</text></g>
+<text x="448" y="205" font-size="16" letter-spacing="2">02 / OVERNIGHT</text><text x="448" y="245" font-size="26" font-weight="700">THE ROBOT REPAIRS.</text>
+<text x="824" y="205" font-size="16" letter-spacing="2">03 / MORNING</text><text x="824" y="245" font-size="26" font-weight="700">YOU MAKE A TABLE.</text>
+<!-- Return bay and split handle -->
+<rect x="86" y="425" width="276" height="155" rx="6" fill="#496567"/><rect x="106" y="448" width="236" height="66" rx="5" fill="#102c2e"/>
+<g transform="translate(132 300)"><path d="M0 15 Q0 0 15 0 H108 L126 14 V52 H15 Q0 52 0 38Z" fill="#369d89"/><path d="M126 10 H150 V44 H126 M150 22 H177 V30 H150" fill="#c0d6c8"/><path d="M59 52 H97 L94 75 L81 66 L70 78 L59 70Z" fill="#369d89"/><path d="M66 102 L78 92 L92 102 L100 94 L95 144 H62Z" fill="#369d89"/><rect x="51" y="137" width="58" height="17" rx="3" fill="#c0d6c8"/></g>
+<text x="72" y="621" font-size="17" fill="#f2efe6">Keep the tool in circulation.</text>
+<!-- Clearly fictional mechanical repair arm and workbench -->
+<path d="M460 522 H742" stroke="#173537" stroke-width="13"/><path d="M477 529 V580 M724 529 V580" stroke="#173537" stroke-width="10"/>
+<use href="#drill" x="560" y="390"/>
+<path d="M478 512 V390 L544 317 L622 353 L632 407" fill="none" stroke="#647e70" stroke-width="23" stroke-linejoin="round"/>
+<g fill="#f2efe6" stroke="#173537" stroke-width="5"><circle cx="478" cy="390" r="15"/><circle cx="544" cy="317" r="15"/><circle cx="622" cy="353" r="13"/></g>
+<path d="M632 400 L616 420 L623 438 M632 400 L650 419 L645 437" fill="none" stroke="#173537" stroke-width="7"/>
+<text x="448" y="621" font-size="17">A repair seam, not a replacement.</text>
+<!-- Human borrower at the completed wooden table -->
+<circle cx="1057" cy="326" r="27" fill="#173537"/>
+<path d="M1048 364 L1032 441 L993 472 M1048 367 L1075 423 L1048 461" fill="none" stroke="#173537" stroke-width="20" stroke-linecap="round"/>
+<path d="M1037 441 L1034 552 M1037 441 L1094 550" fill="none" stroke="#173537" stroke-width="20" stroke-linecap="round"/>
+<rect x="833" y="460" width="212" height="25" rx="3" fill="#a86b37"/><path d="M850 485 V579 M1026 485 V579" stroke="#a86b37" stroke-width="15"/>
+<use href="#drill" transform="translate(881 368) scale(.8)"/>
+<path d="M843 472 H1033" stroke="#704420" stroke-width="2"/>
+<text x="824" y="621" font-size="17">The useful part happens at home.</text>
+<text x="48" y="714" font-size="25">Borrow the tool. Keep what you make.</text>
+<text x="48" y="755" font-size="16" fill="#526663">An original imagined scene, not an existing service or demonstrated repair robot.</text>
+</g></svg>

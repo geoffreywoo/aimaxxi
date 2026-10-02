@@ -59,7 +59,10 @@ const missionHTML = (await readFile(path.join(root, 'src/mission.html'), 'utf8')
 const missionDir = path.join(dist, 'missions/make-the-future-tangible');
 await mkdir(missionDir, {recursive: true}); await writeFile(path.join(missionDir,'index.html'),missionHTML);
 await writeFile(path.join(dist,'mission.json'), JSON.stringify(mission,null,2));
+const imagineDir = path.join(dist, 'imagine/tool-library');
+await mkdir(imagineDir, {recursive: true});
+await writeFile(path.join(imagineDir, 'index.html'), await readFile(path.join(root, 'src/tool-library.html'), 'utf8'));
 const manifestoURLs = await publishManifesto(root, dist, config);
-const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, ...manifestoURLs];
+const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, ...manifestoURLs];
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicURLs.map(url => `<url><loc>${escapeHTML(url)}</loc></url>`).join('')}</urlset>\n`);
 console.log('Built static site in dist/. No server or browser runtime dependencies.');
