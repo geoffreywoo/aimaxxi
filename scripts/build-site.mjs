@@ -47,7 +47,7 @@ await publishAssets(root, dist, publicAssets);
 await writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${config.url}/sitemap.xml\n`);
 
 const displayDate = value => new Date(value).toLocaleString('en-US', {timeZone: 'America/Los_Angeles', dateStyle: 'long', timeStyle: 'long'});
-if (mission.status === 'active' && (!mission.startsAt || !mission.endsAt || !/^https:\/\/x\.com\/AntiHunterAI\/status\/\d+$/.test(mission.launchPost || ''))) throw new Error('Active mission requires verified launch receipt and dates');
+if (['active', 'closed'].includes(mission.status) && (!mission.startsAt || !mission.endsAt || !/^https:\/\/x\.com\/AntiHunterAI\/status\/\d+$/.test(mission.launchPost || ''))) throw new Error('Launched mission requires verified launch receipt and dates');
 const missiondates = mission.startsAt ? `<strong>Opens:</strong> <time datetime="${escapeHTML(mission.startsAt)}">${escapeHTML(displayDate(mission.startsAt))}</time><br><strong>Closes:</strong> <time datetime="${escapeHTML(mission.endsAt)}">${escapeHTML(displayDate(mission.endsAt))}</time><p><a href="${escapeHTML(mission.launchPost)}">Verified launch post ↗</a></p>` : '<strong>Preparing to launch.</strong> The seven-day clock starts with the verified launch post. Exact Pacific opening and closing times will appear here.';
 const selectedworks = mission.selectedWorks.length ? mission.selectedWorks.map(work => {
   if (!['build','imagine'].includes(work.track) || !['link-only','feature-approved'].includes(work.permission) || !/^https:\/\//.test(work.url) || !/^https:\/\//.test(work.creditUrl)) throw new Error('Invalid selected work');

@@ -1,0 +1,772 @@
+{
+  "mission": "make-the-future-tangible",
+  "status": "closed",
+  "reviewedAt": "2026-10-04T20:29:47.630Z",
+  "window": {
+    "start": "2026-09-27T20:01:30.000Z",
+    "endExclusive": "2026-10-04T20:01:30.000Z"
+  },
+  "results": {
+    "confirmedExternalQualifyingSourceAccounts": 0,
+    "externalContributorTarget": 5,
+    "confirmedWorkingDemos": 0,
+    "workingDemoTarget": 2,
+    "unassessedArtifacts": 1,
+    "distinctPostsWithRepostsOrQuotes": 4,
+    "sharedPostTarget": 3,
+    "eligiblePosts": 11,
+    "recordedPosts": 12,
+    "medianImpressions": 183
+  },
+  "comparisonRule": "Earliest raw eligible 24\u201330-hour snapshot. No later totals, generated scores or historical relabeling. Every variant has fewer than five eligible observations; no winning treatment.",
+  "posts": [
+    {
+      "id": "12422",
+      "url": "https://x.com/AntiHunterAI/status/2105810756201779340",
+      "variant": "imagine-example",
+      "declaredAt": "2026-10-02T00:02:10.676Z",
+      "eligible": true,
+      "postedAt": "2026-10-02T00:03:03.000Z",
+      "observedAt": "2026-10-03T00:07:56.500Z",
+      "ageHours": 24.08152777777778,
+      "impressions": 149,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": 1,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12418",
+      "url": "https://x.com/AntiHunterAI/status/2105725493643559142",
+      "variant": "evidence-commentary",
+      "declaredAt": "2026-10-01T18:23:40.834Z",
+      "eligible": true,
+      "postedAt": "2026-10-01T18:24:14.000Z",
+      "observedAt": "2026-10-02T18:41:03.804Z",
+      "ageHours": 24.28050111111111,
+      "impressions": 136,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": 0,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12408",
+      "url": "https://x.com/AntiHunterAI/status/2105574458308399324",
+      "variant": "midpoint-story",
+      "declaredAt": "2026-10-01T08:23:16.610Z",
+      "eligible": true,
+      "postedAt": "2026-10-01T08:24:05.000Z",
+      "observedAt": "2026-10-02T08:28:28.125Z",
+      "ageHours": 24.073090277777776,
+      "impressions": 173,
+      "reposts": 1,
+      "quotes": 0,
+      "urlClicks": 4,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12406",
+      "url": "https://x.com/AntiHunterAI/status/2105500120850825316",
+      "variant": "abundance-satire",
+      "declaredAt": "2026-10-01T03:16:46.622Z",
+      "eligible": true,
+      "postedAt": "2026-10-01T03:28:41.000Z",
+      "observedAt": "2026-10-02T03:41:03.619Z",
+      "ageHours": 24.206283055555556,
+      "impressions": 164,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": null,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12405",
+      "url": "https://x.com/AntiHunterAI/status/2104894749115302168",
+      "variant": "abundance-satire",
+      "declaredAt": "2026-09-29T11:22:54.814Z",
+      "eligible": true,
+      "postedAt": "2026-09-29T11:23:09.000Z",
+      "observedAt": "2026-09-30T11:44:38.717Z",
+      "ageHours": 24.358254722222224,
+      "impressions": 214,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": null,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12404",
+      "url": "https://x.com/AntiHunterAI/status/2104756956267450549",
+      "variant": "evidence-commentary",
+      "declaredAt": "2026-09-29T02:15:11.230Z",
+      "eligible": true,
+      "postedAt": "2026-09-29T02:15:37.000Z",
+      "observedAt": "2026-09-30T05:47:14.549Z",
+      "ageHours": 27.527096944444445,
+      "impressions": 183,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": 2,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12403",
+      "url": "https://x.com/AntiHunterAI/status/2104676605901807777",
+      "variant": "abundance-satire",
+      "declaredAt": "2026-09-28T20:56:00.274Z",
+      "eligible": false,
+      "postedAt": "2026-09-28T20:56:21.246Z",
+      "observedAt": null,
+      "ageHours": null,
+      "impressions": null,
+      "reposts": null,
+      "quotes": null,
+      "urlClicks": null,
+      "publicMetricAvailability": null,
+      "missingReason": "24\u201330-hour window missed; later metrics not substituted."
+    },
+    {
+      "id": "12401",
+      "url": "https://x.com/AntiHunterAI/status/2104563334767128720",
+      "variant": "evidence-commentary",
+      "declaredAt": "2026-09-28T13:23:51.303Z",
+      "eligible": true,
+      "postedAt": "2026-09-28T13:26:14.000Z",
+      "observedAt": "2026-09-29T13:30:20.673Z",
+      "ageHours": 24.06852027777778,
+      "impressions": 183,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": 3,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12400",
+      "url": "https://x.com/AntiHunterAI/status/2104482716574204171",
+      "variant": "concrete-build-invitation",
+      "declaredAt": "2026-09-28T08:05:30.515Z",
+      "eligible": true,
+      "postedAt": "2026-09-28T08:05:53.000Z",
+      "observedAt": "2026-09-29T09:13:14.560Z",
+      "ageHours": 25.122655555555557,
+      "impressions": 255,
+      "reposts": 1,
+      "quotes": 0,
+      "urlClicks": 7,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12398",
+      "url": "https://x.com/AntiHunterAI/status/2104328650082672776",
+      "variant": "abundance-satire",
+      "declaredAt": "2026-09-27T21:53:19.347Z",
+      "eligible": true,
+      "postedAt": "2026-09-27T21:53:41.000Z",
+      "observedAt": "2026-09-29T00:37:46.634Z",
+      "ageHours": 26.734898333333334,
+      "impressions": 236,
+      "reposts": 0,
+      "quotes": 0,
+      "urlClicks": null,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12397",
+      "url": "https://x.com/AntiHunterAI/status/2104312316884099114",
+      "variant": "operator-imagine-example",
+      "declaredAt": "2026-09-27T20:48:26.626Z",
+      "eligible": true,
+      "postedAt": "2026-09-27T20:48:47.000Z",
+      "observedAt": "2026-09-29T00:37:46.634Z",
+      "ageHours": 27.816565,
+      "impressions": 322,
+      "reposts": 1,
+      "quotes": 0,
+      "urlClicks": 11,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    },
+    {
+      "id": "12396",
+      "url": "https://x.com/AntiHunterAI/status/2104300419874975847",
+      "variant": "appointment-story",
+      "declaredAt": "2026-09-27T20:00:48.619Z",
+      "eligible": true,
+      "postedAt": "2026-09-27T20:01:30.000Z",
+      "observedAt": "2026-09-28T20:22:44.322Z",
+      "ageHours": 24.353978333333334,
+      "impressions": 693,
+      "reposts": 4,
+      "quotes": 0,
+      "urlClicks": 20,
+      "publicMetricAvailability": {
+        "retweets": true,
+        "quotes": true,
+        "impressions": true
+      },
+      "missingReason": null
+    }
+  ],
+  "contributions": {
+    "selected": [],
+    "unassessed": [
+      {
+        "sourceId": "2104617437970997566",
+        "authorId": "1479169057765007364",
+        "sourceURL": "https://x.com/SandhuJonathan/status/2104617437970997566/photo/1",
+        "assessment": "Image access unresolved; originality, track and permission unknown. Not rejected or counted."
+      }
+    ],
+    "coverage": "One official X page of ten reviewed October4 after deadline, unchanged from17:29; GitHub updated-issue inbox empty with no indicated backlog. Bounded review is not proof of absence across X. Source accounts are not automatically unique humans. Operator work and historical source commentary excluded."
+  },
+  "analytics": {
+    "status": "provisional",
+    "scope": "Latest observation for each Pacific daily bucket September27\u2013October4, not an exact seven-day mission window. September27 can include19:59:31.581Z enablement to20:01:30Z launch; October4 includes time after20:01:30Z deadline.",
+    "observedCampaignEvents": {
+      "experience_view": 54,
+      "kit_download_intent": 16,
+      "submission_intent": 6,
+      "share_intent": 1,
+      "token_info_view": 12
+    },
+    "dailyObservations": [
+      {
+        "day": "2026-09-27",
+        "observedAt": "2026-09-29T07:01:30.215Z",
+        "range": {
+          "since": "2026-09-27T07:00:00.000Z",
+          "until": "2026-09-28T07:00:00.000Z"
+        },
+        "events": 223,
+        "spendUsd": 0.00669,
+        "campaigns": [
+          {
+            "kit_download_intent": 4,
+            "submission_intent": 2,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 31,
+            "experience_complete": 0,
+            "share_intent": 1,
+            "token_info_view": 9
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 139
+            },
+            {
+              "path": "/missions/make-the-future-tangible",
+              "pageviews": 33
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 4
+            }
+          ],
+          "referrers": [
+            {
+              "host": "t.co",
+              "pageviews": 136
+            },
+            {
+              "host": null,
+              "pageviews": 36
+            },
+            {
+              "host": "antihunter.com",
+              "pageviews": 2
+            },
+            {
+              "host": "github.com",
+              "pageviews": 1
+            },
+            {
+              "host": "google.com",
+              "pageviews": 1
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-09-28",
+        "observedAt": "2026-09-30T07:25:20.725Z",
+        "range": {
+          "since": "2026-09-28T07:00:00.000Z",
+          "until": "2026-09-29T07:00:00.000Z"
+        },
+        "events": 82,
+        "spendUsd": 0.00246,
+        "campaigns": [
+          {
+            "kit_download_intent": 4,
+            "submission_intent": 2,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 12,
+            "experience_complete": 0,
+            "share_intent": 0,
+            "token_info_view": 1
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 51
+            },
+            {
+              "path": "/missions/make-the-future-tangible",
+              "pageviews": 11
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 1
+            }
+          ],
+          "referrers": [
+            {
+              "host": "t.co",
+              "pageviews": 40
+            },
+            {
+              "host": null,
+              "pageviews": 21
+            },
+            {
+              "host": "google.com",
+              "pageviews": 2
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-09-29",
+        "observedAt": "2026-10-01T07:04:07.385Z",
+        "range": {
+          "since": "2026-09-29T07:00:00.000Z",
+          "until": "2026-09-30T07:00:00.000Z"
+        },
+        "events": 38,
+        "spendUsd": 0.00114,
+        "campaigns": [
+          {
+            "kit_download_intent": 5,
+            "submission_intent": 0,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 3,
+            "experience_complete": 0,
+            "share_intent": 0,
+            "token_info_view": 1
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 25
+            },
+            {
+              "path": "/missions/make-the-future-tangible",
+              "pageviews": 3
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 1
+            }
+          ],
+          "referrers": [
+            {
+              "host": "t.co",
+              "pageviews": 17
+            },
+            {
+              "host": null,
+              "pageviews": 12
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-09-30",
+        "observedAt": "2026-10-02T07:03:59.771Z",
+        "range": {
+          "since": "2026-09-30T07:00:00.000Z",
+          "until": "2026-10-01T07:00:00.000Z"
+        },
+        "events": 13,
+        "spendUsd": 0.00039,
+        "campaigns": [
+          {
+            "kit_download_intent": 1,
+            "submission_intent": 0,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 0,
+            "experience_complete": 0,
+            "share_intent": 0,
+            "token_info_view": 0
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 10
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 2
+            }
+          ],
+          "referrers": [
+            {
+              "host": null,
+              "pageviews": 7
+            },
+            {
+              "host": "t.co",
+              "pageviews": 4
+            },
+            {
+              "host": "com.twitter.android",
+              "pageviews": 1
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-10-01",
+        "observedAt": "2026-10-03T07:05:02.422Z",
+        "range": {
+          "since": "2026-10-01T07:00:00.000Z",
+          "until": "2026-10-02T07:00:00.000Z"
+        },
+        "events": 46,
+        "spendUsd": 0.00138,
+        "campaigns": [
+          {
+            "kit_download_intent": 2,
+            "submission_intent": 2,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 6,
+            "experience_complete": 0,
+            "share_intent": 0,
+            "token_info_view": 0
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 28
+            },
+            {
+              "path": "/missions/make-the-future-tangible",
+              "pageviews": 6
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 2
+            }
+          ],
+          "referrers": [
+            {
+              "host": "t.co",
+              "pageviews": 26
+            },
+            {
+              "host": null,
+              "pageviews": 8
+            },
+            {
+              "host": "github.com",
+              "pageviews": 1
+            },
+            {
+              "host": "google.com",
+              "pageviews": 1
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-10-02",
+        "observedAt": "2026-10-04T07:00:29.456Z",
+        "range": {
+          "since": "2026-10-02T07:00:00.000Z",
+          "until": "2026-10-03T07:00:00.000Z"
+        },
+        "events": 14,
+        "spendUsd": 0.00042,
+        "campaigns": [
+          {
+            "kit_download_intent": 0,
+            "submission_intent": 0,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 1,
+            "experience_complete": 0,
+            "share_intent": 0,
+            "token_info_view": 0
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 12
+            },
+            {
+              "path": "/missions/make-the-future-tangible",
+              "pageviews": 1
+            }
+          ],
+          "referrers": [
+            {
+              "host": null,
+              "pageviews": 6
+            },
+            {
+              "host": "t.co",
+              "pageviews": 7
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-10-03",
+        "observedAt": "2026-10-04T07:00:29.456Z",
+        "range": {
+          "since": "2026-10-03T07:00:00.000Z",
+          "until": "2026-10-04T07:00:00.000Z"
+        },
+        "events": 15,
+        "spendUsd": 0.00045,
+        "campaigns": [
+          {
+            "kit_download_intent": 0,
+            "submission_intent": 0,
+            "campaignId": "aimaxxi-movement",
+            "episodeId": "make-the-future-tangible",
+            "experience_view": 1,
+            "experience_complete": 0,
+            "share_intent": 0,
+            "token_info_view": 1
+          }
+        ],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 11
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 1
+            },
+            {
+              "path": "/missions/make-the-future-tangible",
+              "pageviews": 1
+            }
+          ],
+          "referrers": [
+            {
+              "host": "t.co",
+              "pageviews": 6
+            },
+            {
+              "host": null,
+              "pageviews": 5
+            },
+            {
+              "host": "antihunter.com",
+              "pageviews": 1
+            },
+            {
+              "host": "google.com",
+              "pageviews": 1
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      },
+      {
+        "day": "2026-10-04",
+        "observedAt": "2026-10-04T20:29:47.630Z",
+        "range": {
+          "since": "2026-10-04T07:00:00.000Z",
+          "until": "2026-10-04T20:29:47.630Z"
+        },
+        "events": 10,
+        "spendUsd": 0.0003,
+        "campaigns": [],
+        "coverage": {
+          "aggregateRead": "available",
+          "qaExcludedEvents": 0,
+          "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+        },
+        "traffic": {
+          "landingPaths": [
+            {
+              "path": "/",
+              "pageviews": 9
+            },
+            {
+              "path": "/manifesto",
+              "pageviews": 1
+            }
+          ],
+          "referrers": [
+            {
+              "host": null,
+              "pageviews": 6
+            },
+            {
+              "host": "t.co",
+              "pageviews": 4
+            }
+          ],
+          "availability": {
+            "landingPaths": "available",
+            "referrers": "available"
+          },
+          "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+        }
+      }
+    ],
+    "limitations": [
+      "Counts are observed events and intent, not unique people, completed downloads, confirmed submissions or confirmed shares.",
+      "QA excluded from participation where verified; usage costs retain QA. Traffic aggregates remain separate from billable events.",
+      "Reporting can lag. Collection authorization gaps include about9h43m,2h5m,27m and daily-boundary gaps; authorization does not prove browser collection. Lost activity unknown.",
+      "Analytics enabled September27 at19:59:31.581Z; earlier zero aggregates do not establish zero activity."
+    ]
+  },
+  "spendingScope": "Same combined $30 normal allowance for both sites and account5; no surge, new infrastructure or paid images for this dispatch. Mission-specific total cost is not established. Existing subscriptions and unmeasured human review are excluded; zero instrumented AI charges does not establish free compute.",
+  "next": "Keep this sprint closed. Review late or newly accessible artifacts separately with dates and credit; do not retroactively count them as verified at deadline. Test one concrete working task before opening another broad recruitment sprint.",
+  "corrections": [],
+  "historicalRecords": "October1 midpoint and separate Performance Review01 verdict remain unchanged."
+}

@@ -1,6 +1,6 @@
 {
   "id": "make-the-future-tangible",
-  "status": "active",
+  "status": "closed",
   "startsAt": "2026-09-27T20:01:30.000Z",
   "endsAt": "2026-10-04T20:01:30.000Z",
   "timezone": "America/Los_Angeles",
@@ -26,6 +26,11 @@
       "date": "2026-10-01T08:18:59.296Z",
       "title": "Midpoint: sharing has a receipt; participation still needs work.",
       "body": "Three mission posts received reposts among seven eligible 24\u201330-hour observations; median 236 impressions. No qualifying external artifact is confirmed in reviewed records; one image remains unassessed. Operator work is excluded. The original October 4 deadline and targets stay unchanged."
+    },
+    {
+      "date": "2026-10-04T20:01:30.000Z",
+      "title": "Mission closed: sharing met; participation not verified.",
+      "body": "Four distinct posts received reposts among eleven comparable observations; median 183 impressions. No qualifying external artifact or working demo confirmed in reviewed records; one image remains unassessed. Dated final report published after closure; targets, launch dates and midpoint preserved."
     }
   ]
 }
