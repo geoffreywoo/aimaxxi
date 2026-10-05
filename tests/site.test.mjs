@@ -181,18 +181,18 @@ test('essential reading and participation are delivered as static HTML', () => {
 test('participation links open editable, correctly attributed and public destinations', () => {
   const share = anchors.map((anchor) => anchor.href).find((href) => href?.startsWith('https://x.com/intent/post?'));
   const shareURL = new URL(share);
-  assert.equal(shareURL.searchParams.get('url'), config.url + '/missions/make-the-future-tangible');
-  assert.equal(shareURL.searchParams.get('text'), '@antihunterai my contribution to Make the future tangible. #AIMAXXI');
+  assert.equal(shareURL.searchParams.get('url'), config.url + '/life-after-scarcity');
+  assert.equal(shareURL.searchParams.get('text'), '@antihunterai my scene from Life After Scarcity. Source and credit: Permission to feature:');
   assert.match(text, /Opens an editable post\. Attach your image yourself\./);
   const submission = anchors.map((anchor) => anchor.href).find((href) => href?.startsWith(config.repository + '/issues/new?'));
   const submissionURL = new URL(submission);
-  assert.equal(submissionURL.searchParams.get('title'), '[Mission 001] My contribution');
+  assert.equal(submissionURL.searchParams.get('title'), '[Life After Scarcity] My scene or source');
   const body = submissionURL.searchParams.get('body');
   for (const section of ['The work', 'Links', 'Creator credit', 'Description', 'Original or remix', 'Permission to feature']) {
     assert.ok(body.includes(`## ${section}\n`), `Submission prompt has ${section}`);
   }
   assert.match(body, /Please do not include private information\. This issue will be public\./);
-  assert.match(text, /GitHub sign-in required\. Submissions are public\./);
+  assert.match(text, /Optional for code and source\. Public; sign-in required\./);
 });
 
 test('poster exports and social preview have their promised raster dimensions', async () => {

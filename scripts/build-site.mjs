@@ -17,11 +17,11 @@ for (const work of mission.selectedWorks) {
 }
 const escapeHTML = (value) => String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const issue = new URL(`${config.repository}/issues/new`);
-issue.searchParams.set('title', '[Mission 001] My contribution');
-issue.searchParams.set('body', '## Mission\nmake-the-future-tangible\n\n## Track\nBuild / Imagine:\n\n## The work\nTitle and type (art, meme, film, demo, tool, or other):\n\n## Links\nFinished work:\nEditable source, if available:\n\n## Creator credit\nName and profile link:\n\n## Description\nWhat did you make? What does it do?\n\n## Original or remix\nList any source material, collaborators, and permissions:\n\n## Permission to feature\nMay AI/MAXXI feature this work with the credit above? Yes / No\n\nPlease do not include private information. This issue will be public.');
+issue.searchParams.set('title', '[Life After Scarcity] My scene or source');
+issue.searchParams.set('body', '## Mission\nlife-after-scarcity\n\n## Track\nBuild / Imagine:\n\n## The work\nTitle and type (art, meme, film, demo, tool, or other):\n\n## Links\nFinished work:\nEditable source, if available:\n\n## Creator credit\nName and profile link:\n\n## Description\nWhat did you make? What does it do?\n\n## Original or remix\nList any source material, collaborators, and permissions:\n\n## Permission to feature\nMay AI/MAXXI feature this work with the credit above? Yes / No\n\nPlease do not include private information. This issue will be public.');
 const share = new URL('https://x.com/intent/post');
-share.searchParams.set('text', '@antihunterai my contribution to Make the future tangible. #AIMAXXI');
-share.searchParams.set('url', config.url + '/missions/make-the-future-tangible');
+share.searchParams.set('text', '@antihunterai my scene from Life After Scarcity. Source and credit: Permission to feature:');
+share.searchParams.set('url', config.url + '/life-after-scarcity');
 const values = {
   ...config,
   buy: `https://jup.ag/swap?buy=${config.mint}&sell=So11111111111111111111111111111111111111112`,
@@ -62,7 +62,10 @@ await writeFile(path.join(dist,'mission.json'), JSON.stringify(mission,null,2));
 const imagineDir = path.join(dist, 'imagine/tool-library');
 await mkdir(imagineDir, {recursive: true});
 await writeFile(path.join(imagineDir, 'index.html'), await readFile(path.join(root, 'src/tool-library.html'), 'utf8'));
+const seasonDir = path.join(dist, 'life-after-scarcity');
+await mkdir(seasonDir, {recursive:true});
+await writeFile(path.join(seasonDir, 'index.html'), await readFile(path.join(root,'src/scarcity.html'),'utf8'));
 const manifestoURLs = await publishManifesto(root, dist, config);
-const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, ...manifestoURLs];
+const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, ...manifestoURLs];
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicURLs.map(url => `<url><loc>${escapeHTML(url)}</loc></url>`).join('')}</urlset>\n`);
 console.log('Built static site in dist/. No server or browser runtime dependencies.');
