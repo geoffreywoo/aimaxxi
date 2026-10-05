@@ -767,6 +767,141 @@
   },
   "spendingScope": "Same combined $30 normal allowance for both sites and account5; no surge, new infrastructure or paid images for this dispatch. Mission-specific total cost is not established. Existing subscriptions and unmeasured human review are excluded; zero instrumented AI charges does not establish free compute.",
   "next": "Keep this sprint closed. Review late or newly accessible artifacts separately with dates and credit; do not retroactively count them as verified at deadline. Test one concrete working task before opening another broad recruitment sprint.",
-  "corrections": [],
+  "corrections": [
+    {
+      "pacificDate": "2026-10-05",
+      "observedAt": "2026-10-05T07:00:36.447Z",
+      "originalFinalSha256": "e406d2e2d18351f3a75ea5ea8c26e1c61eec91c23acd89dad49602831ea8422b",
+      "dailyObservations": [
+        {
+          "day": "2026-10-04",
+          "observedAt": "2026-10-05T07:00:36.447Z",
+          "range": {
+            "since": "2026-10-04T07:00:00.000Z",
+            "until": "2026-10-05T07:00:00.000Z"
+          },
+          "events": 25,
+          "spendUsd": 0.00075,
+          "campaigns": [],
+          "traffic": {
+            "landingPaths": [
+              {
+                "path": "/",
+                "pageviews": 18
+              },
+              {
+                "path": "/manifesto",
+                "pageviews": 6
+              },
+              {
+                "path": "/manifesto/principles",
+                "pageviews": 1
+              }
+            ],
+            "referrers": [
+              {
+                "host": null,
+                "pageviews": 16
+              },
+              {
+                "host": "t.co",
+                "pageviews": 7
+              },
+              {
+                "host": "google.com",
+                "pageviews": 2
+              }
+            ],
+            "availability": {
+              "landingPaths": "available",
+              "referrers": "available"
+            },
+            "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+          },
+          "coverage": {
+            "aggregateRead": "available",
+            "qaExcludedEvents": 0,
+            "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+          },
+          "source": "Vercel production aggregates; $0.03/1000 events including QA. Verified QA excluded from campaign counts only. Reporting can lag; no sampled extrapolation. share_intent is not confirmed sharing."
+        },
+        {
+          "day": "2026-10-03",
+          "observedAt": "2026-10-05T07:00:36.447Z",
+          "range": {
+            "since": "2026-10-03T07:00:00.000Z",
+            "until": "2026-10-04T07:00:00.000Z"
+          },
+          "events": 15,
+          "spendUsd": 0.00045,
+          "campaigns": [
+            {
+              "campaignId": "aimaxxi-movement",
+              "episodeId": "make-the-future-tangible",
+              "experience_view": 1,
+              "experience_complete": 0,
+              "share_intent": 0,
+              "token_info_view": 1,
+              "kit_download_intent": 0,
+              "submission_intent": 0
+            }
+          ],
+          "traffic": {
+            "landingPaths": [
+              {
+                "path": "/",
+                "pageviews": 11
+              },
+              {
+                "path": "/manifesto",
+                "pageviews": 1
+              },
+              {
+                "path": "/missions/make-the-future-tangible",
+                "pageviews": 1
+              }
+            ],
+            "referrers": [
+              {
+                "host": "t.co",
+                "pageviews": 6
+              },
+              {
+                "host": null,
+                "pageviews": 5
+              },
+              {
+                "host": "antihunter.com",
+                "pageviews": 1
+              },
+              {
+                "host": "google.com",
+                "pageviews": 1
+              }
+            ],
+            "availability": {
+              "landingPaths": "available",
+              "referrers": "available"
+            },
+            "scope": "Top 100 native request-path and referrer-host groups; pageviews, not unique or first landings. Separate from billable events. Includes unexcluded QA. Null host means no recorded referrer."
+          },
+          "coverage": {
+            "aggregateRead": "available",
+            "qaExcludedEvents": 0,
+            "notes": "Control authorization history is stored separately; it does not prove browser collection. Reporting may lag. Sampling cannot reconstruct total traffic."
+          },
+          "source": "Vercel production aggregates; $0.03/1000 events including QA. Verified QA excluded from campaign counts only. Reporting can lag; no sampled extrapolation. share_intent is not confirmed sharing."
+        }
+      ],
+      "campaignEventsUnchanged": {
+        "experience_view": 54,
+        "kit_download_intent": 16,
+        "submission_intent": 6,
+        "share_intent": 1,
+        "token_info_view": 12
+      },
+      "assessment": "October3 mission event counts unchanged. October4 full-day billable events 25 versus original partial-day 10; still no mission campaign events. Later daily scope includes postdeadline traffic, not exact mission window. No new contribution or revised verdict. Reporting lag persists; October6 check pending."
+    }
+  ],
   "historicalRecords": "October1 midpoint and separate Performance Review01 verdict remain unchanged."
 }
