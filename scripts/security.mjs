@@ -14,7 +14,7 @@ export function validateHttpsURL(value, label = 'URL') {
 }
 
 export function validateAssetPath(file) {
-  if (!/^assets\/(art|brand|css|fonts|js|kit)\/[a-zA-Z0-9][a-zA-Z0-9._-]*\.(webp|png|jpe?g|svg|ico|css|js|woff2|ttf|txt|md|json|zip)$/.test(file)) {
+  if (!/^assets\/(art|brand|css|fonts|js|kit|scarcity)\/[a-zA-Z0-9][a-zA-Z0-9._-]*\.(webp|png|jpe?g|svg|ico|css|js|woff2|ttf|txt|md|json|zip)$/.test(file)) {
     throw new Error(`Unapproved public asset path: ${file}`);
   }
 }
