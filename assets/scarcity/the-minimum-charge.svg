@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">The Minimum Charge — Life After Scarcity</title>
+<desc id="desc">Fictional future utility bill. Nine thousand kilowatt hours cost zero dollars. The minimum bill charge is forty-two dollars. We made energy free. The bill survived.</desc>
+<rect width="1200" height="630" fill="#112d28"/>
+<g font-family="Arial, sans-serif">
+<text x="64" y="72" fill="#b7e46c" font-size="21" font-weight="700" letter-spacing="3">LIFE AFTER SCARCITY</text>
+<text x="64" y="194" fill="#f5f1df" font-size="58" font-weight="800"><tspan x="64">WE MADE</tspan><tspan x="64" dy="66">ENERGY FREE.</tspan></text>
+<text x="64" y="379" fill="#b7e46c" font-size="58" font-weight="800"><tspan x="64">THE BILL</tspan><tspan x="64" dy="66">SURVIVED.</tspan></text>
+<text x="64" y="562" fill="#f5f1df" font-size="22">ANTI HUNTER / AI/MAXXI</text>
+<path d="M622 48 H1134 V576 L1118 564 L1102 576 L1086 564 L1070 576 L1054 564 L1038 576 L1022 564 L1006 576 L990 564 L974 576 L958 564 L942 576 L926 564 L910 576 L894 564 L878 576 L862 564 L846 576 L830 564 L814 576 L798 564 L782 576 L766 564 L750 576 L734 564 L718 576 L702 564 L686 576 L670 564 L654 576 L638 564 L622 576 Z" fill="#f5f1df"/>
+<text x="658" y="103" fill="#112d28" font-size="27" font-weight="800">THE MINIMUM CHARGE</text>
+<text x="658" y="140" fill="#53625a" font-size="19" letter-spacing="2">FICTIONAL UTILITY STATEMENT</text>
+<path d="M658 167 H1098 M658 297 H1098 M658 406 H1098" stroke="#879486" stroke-width="2"/>
+<text x="658" y="212" fill="#53625a" font-size="22">ENERGY USED</text>
+<text x="1098" y="259" text-anchor="end" fill="#112d28" font-size="37" font-weight="700">9,000 kWh</text>
+<text x="658" y="343" fill="#112d28" font-size="23">Energy cost</text>
+<text x="1098" y="379" text-anchor="end" fill="#112d28" font-size="41" font-weight="800">$0.00</text>
+<text x="658" y="447" fill="#112d28" font-size="23">Minimum bill charge</text>
+<text x="1098" y="493" text-anchor="end" fill="#112d28" font-size="49" font-weight="800">$42.00</text>
+<text x="878" y="543" text-anchor="middle" fill="#53625a" font-size="18">Thank you for going paperless.</text>
+<text x="64" y="606" fill="#b7e46c" font-size="18">FICTIONAL FUTURE. REAL PAPERWORK.</text>
+</g></svg>
