@@ -6,12 +6,12 @@ export function admissible(control, cohort, now = new Date()) {
  return control?.day===today && [1,.1].includes(control.sampleRate) && cohort>=0 && cohort<control.sampleRate && expiry>now.getTime() && expiry<=now.getTime()+90*60000;
 }
 export function cleanURL(value){const u=new URL(value);return u.origin+u.pathname;}
+export function campaignContext(pathname){const season=pathname.startsWith('/life-after-scarcity');return {campaign:season?'life-after-scarcity':'aimaxxi-movement',episode:season?(pathname.replace(/\/$/,'')==='/life-after-scarcity/make'?'storyboard-maker':'writers-room'):'make-the-future-tangible'};}
 if(typeof window!=='undefined' && ['aimaxxi.com','www.aimaxxi.com'].includes(location.hostname)) {
  let control=null, injected=false, busy=false, cohortDay='',cohort=1; const sent=new Set();
  function sample(){if(cohortDay!==day()){cohortDay=day();cohort=Math.random();try{const k='aimaxxi:sample:'+cohortDay,v=sessionStorage.getItem(k);if(v!==null&&Number(v)>=0&&Number(v)<1)cohort=Number(v);else sessionStorage.setItem(k,String(cohort));}catch{}}return cohort;}
  const season=location.pathname.startsWith('/life-after-scarcity');
- const campaign=season?'life-after-scarcity':'aimaxxi-movement';
- const episode=season?'writers-room':'make-the-future-tangible';
+ const {campaign,episode}=campaignContext(location.pathname);
  function send(name){if(!injected||!admissible(control,sample()))return;const k=`aimaxxi:${day()}:${episode}:${name}`;if(sent.has(k))return;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');}catch{}sent.add(k);window.va('event',{name,data:{campaign,episode}});}
  async function refresh(){if(busy)return;busy=true;try{const r=await fetch('https://www.clawfable.com/api/public/antihunter/analytics-control',{credentials:'omit',signal:AbortSignal.timeout(4000)});control=r.ok?await r.json():null;}catch{control=null;}finally{busy=false;}
  if(!admissible(control,sample()))return;

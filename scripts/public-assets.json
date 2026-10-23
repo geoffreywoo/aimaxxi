@@ -120,5 +120,10 @@
   "assets/scarcity/closing-the-loop.png",
   "assets/scarcity/closing-the-loop.svg",
   "assets/scarcity/personal-editions.png",
-  "assets/scarcity/personal-editions.svg"
+  "assets/scarcity/personal-editions.svg",
+  "assets/css/storyboard.css",
+  "assets/js/storyboard-model.js",
+  "assets/js/storyboard.js",
+  "assets/scarcity/storyboard-maker.svg",
+  "assets/scarcity/storyboard-maker.png"
 ]

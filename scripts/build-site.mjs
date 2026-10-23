@@ -65,7 +65,10 @@ await writeFile(path.join(imagineDir, 'index.html'), await readFile(path.join(ro
 const seasonDir = path.join(dist, 'life-after-scarcity');
 await mkdir(seasonDir, {recursive:true});
 await writeFile(path.join(seasonDir, 'index.html'), await readFile(path.join(root,'src/scarcity.html'),'utf8'));
+const makerDir = path.join(seasonDir, 'make');
+await mkdir(makerDir, {recursive:true});
+await writeFile(path.join(makerDir, 'index.html'), await readFile(path.join(root,'src/storyboard.html'),'utf8'));
 const manifestoURLs = await publishManifesto(root, dist, config);
-const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, ...manifestoURLs];
+const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, `${config.url}/life-after-scarcity/make`, ...manifestoURLs];
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicURLs.map(url => `<url><loc>${escapeHTML(url)}</loc></url>`).join('')}</urlset>\n`);
 console.log('Built static site in dist/. No server or browser runtime dependencies.');
