@@ -32,7 +32,7 @@ Open http://localhost:4173. Rebuild after editing the HTML template or assets.
 
 `index.html` is generated and committed for easy inspection. Edit `src/index.html`, then build. All essential content, downloads and outbound links are HTML; JavaScript only enhances the menu and clipboard. Existing `#top`, `#doctrine`, `#schism`, `#buy` and `#memes` links continue to work.
 
-To regenerate artwork exports, install the pinned Python packages in `scripts/asset-requirements.txt`, then run `python3 scripts/build-assets.py` and rebuild the site. The original image-generation prompts and production details are recorded in the source provenance; the kit includes a portable provenance manifest. Logos and campaign typography are composited vector/raster elements. The kit includes editable SVG templates and the OFL font files required to edit them.
+Artwork exports require Python 3.11 or newer (Pillow 13). In an isolated environment using that Python version, install the pinned packages in `scripts/asset-requirements.txt`, then run `python scripts/build-assets.py` and rebuild the site. The Node site build does not run this asset generator. The original image-generation prompts and production details are recorded in the source provenance; the kit includes a portable provenance manifest. Logos and campaign typography are composited vector/raster elements. The kit includes editable SVG templates and the OFL font files required to edit them.
 
 ## Participate
 
