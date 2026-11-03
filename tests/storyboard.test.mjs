@@ -4,9 +4,12 @@ import { readFile } from 'node:fs/promises';
 import { buildSheet, cleanText, safeStrokes, wrap, LIMITS } from '../assets/js/storyboard-model.js';
 import { campaignContext } from '../assets/js/movement-analytics.js';
 
-test('only the maker route gets its new label; existing campaign labels stay intact', () => {
+test('maker and cast routes get distinct labels; prior campaign labels stay intact', () => {
   assert.deepEqual(campaignContext('/life-after-scarcity/make'), { campaign: 'life-after-scarcity', episode: 'storyboard-maker' });
   assert.deepEqual(campaignContext('/life-after-scarcity/make/'), campaignContext('/life-after-scarcity/make'));
+  assert.deepEqual(campaignContext('/life-after-scarcity/cast'), { campaign: 'life-after-scarcity', episode: 'cast-starter-pack' });
+  assert.deepEqual(campaignContext('/life-after-scarcity/cast/'), campaignContext('/life-after-scarcity/cast'));
+  assert.deepEqual(campaignContext('/life-after-scarcity/cast/example'), { campaign: 'life-after-scarcity', episode: 'writers-room' });
   assert.deepEqual(campaignContext('/life-after-scarcity'), { campaign: 'life-after-scarcity', episode: 'writers-room' });
   assert.deepEqual(campaignContext('/missions/make-the-future-tangible'), { campaign: 'aimaxxi-movement', episode: 'make-the-future-tangible' });
 });
