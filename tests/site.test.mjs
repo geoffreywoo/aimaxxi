@@ -233,3 +233,25 @@ test('the brand-kit ZIP contains the same bytes as each individual download', as
     assert.deepEqual(entry[1], await readFile(path.join(dist, 'assets/kit', basename)));
   }
 });
+
+
+test('individual cast downloads publish the exact released ZIP members', async () => {
+  const cast = await readFile(path.join(dist, 'life-after-scarcity/cast/index.html'), 'utf8');
+  const section = cast.match(/<section\b[^>]*data-individual-cast-downloads[\s\S]*?<\/section>/)?.[0];
+  assert.ok(section, 'cast file choices are reachable in the built page');
+  const links = tags(section, 'a').filter(a => 'download' in a);
+  assert.equal(links.length, 6);
+  assert.equal(new Set(links.map(a => a.href)).size, 6);
+  const archive = zipEntries(await readFile(path.join(dist, 'assets/scarcity/cast-starter-pack-v1.zip')));
+  for (const link of links) {
+    const name = path.basename(link.href);
+    assert.equal(link.download, name);
+    assert.ok(archive.has(name), `${name}: selected file belongs to the original kit`);
+    assert.deepEqual(await readFile(localPath(link.href)), archive.get(name), `${name}: publication must preserve original bytes`);
+  }
+  const source = tags(section, 'a').find(a => a.href?.endsWith('/cast-pieces-provenance-v1.json'));
+  assert.ok(source, 'source credit stays with the individual file choices');
+  assert.deepEqual(await readFile(localPath(source.href)), archive.get('PROVENANCE.json'));
+  assert.ok(tags(section, 'a').some(a => a.href === '/assets/kit/COMMUNITY-USE.md'));
+  assert.deepEqual(await readFile(path.join(dist, 'assets/kit/COMMUNITY-USE.md')), archive.get('COMMUNITY-USE.md'));
+});

@@ -1,0 +1,46 @@
+{
+  "createdAt": "2026-11-03T11:36:23.258990+00:00",
+  "sourceReceipt": "Late Checkout published original deterministic artwork",
+  "sourceURL": "https://antihunter.com/scarcity/late-checkout",
+  "pieces": [
+    {
+      "file": "anti-hunter.svg",
+      "pose": "Anti Hunter · standing",
+      "source": "https://antihunter.com/scarcity/late-checkout.svg",
+      "sourceSHA256": "bb85dbfd15ec644378410026f667e6e45b61297e691d7b0bf9cad3e18de0f730",
+      "sourcePanel": 1,
+      "originalGroupTransform": "translate(448 338) scale(.84)",
+      "normalization": "Remove scene placement/scale only; original child geometry preserved. Standalone root/group supply inherited stroke round caps/joins. Transparent viewBox gives padding; no background removal or inferred missing body parts.",
+      "viewBox": "-90 -95 180 310",
+      "exportSHA256": "10b4d3521399748b00d1d43876fa908bacbd66f95af8777b8d7d70ce76dfb49b"
+    },
+    {
+      "file": "temp-reading.svg",
+      "pose": "Temp · reading with chair",
+      "source": "https://antihunter.com/scarcity/late-checkout.svg",
+      "sourceSHA256": "bb85dbfd15ec644378410026f667e6e45b61297e691d7b0bf9cad3e18de0f730",
+      "sourcePanel": 1,
+      "originalGroupTransform": "translate(235 355)",
+      "normalization": "Remove scene placement/scale only; original child geometry preserved. Standalone root/group supply inherited stroke round caps/joins. Transparent viewBox gives padding; no background removal or inferred missing body parts.",
+      "viewBox": "-95 -100 190 260",
+      "exportSHA256": "0ff04917b9a8cc7213fdd1f945d2804bbc47110000dee3eb909cecceebce8fc4"
+    },
+    {
+      "file": "robot.svg",
+      "pose": "Robot · standing",
+      "source": "https://antihunter.com/scarcity/late-checkout.svg",
+      "sourceSHA256": "bb85dbfd15ec644378410026f667e6e45b61297e691d7b0bf9cad3e18de0f730",
+      "sourcePanel": 1,
+      "originalGroupTransform": "translate(89 382)",
+      "normalization": "Remove scene placement/scale only; original child geometry preserved. Standalone root/group supply inherited stroke round caps/joins. Transparent viewBox gives padding; no background removal or inferred missing body parts.",
+      "viewBox": "-60 -80 120 215",
+      "exportSHA256": "60da146812448663d005c3a965e6aaf50632125abc498098c002cede98ca45f3"
+    }
+  ],
+  "existingTemplateSHA256": {
+    "svg": "8312f9bfb17310382666d51ad7363c8c0c97c71477c9e78c94df3c69360a71ae",
+    "png": "3c0866fa26b33151cacf62247dab8954a703f40bbe2923e52b5992b67c25804f"
+  },
+  "communityUsePermissionSHA256": "72f5eb250936b00b904236f1cca555c9cd517e1e4f555030915c2676d4982ccd",
+  "notANewStory": true
+}
