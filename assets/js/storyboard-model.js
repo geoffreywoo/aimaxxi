@@ -2,7 +2,12 @@
 export const LIMITS = Object.freeze({ title: 40, caption: 84, credit: 48, sources: 80, strokes: 80, points: 256 });
 export const INKS = Object.freeze(['#172d32', '#e46d2e']);
 export function cleanText(value, limit) {
-  return Array.from(String(value ?? '').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '').replace(/\s+/g, ' ')).slice(0, limit).join('').trim();
+  // XML 1.0 cannot represent isolated UTF-16 surrogates or these BMP noncharacters.
+  const text = Array.from(String(value ?? ''), char => {
+    const point = char.codePointAt(0);
+    return (point >= 0xd800 && point <= 0xdfff) || point === 0xfffe || point === 0xffff ? '\ufffd' : char;
+  }).join('');
+  return Array.from(text.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '').replace(/\s+/g, ' ')).slice(0, limit).join('').trim();
 }
 export const xml = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[char]));
 const estimate = (text, size) => Array.from(text).length * size;

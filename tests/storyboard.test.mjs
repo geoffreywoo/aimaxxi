@@ -32,6 +32,16 @@ test('text bounds and whitespace prevent tall newline or long-word exports', () 
   assert.ok([...panel.matchAll(/<text /g)].length <= 5, 'fixed number, heading and at most3 caption lines');
 });
 
+test('malformed UTF-16 and forbidden XML characters remain exportable as replacement text', () => {
+  const malformed = String.fromCharCode(0xd800, 0x78, 0xdc00, 0xfffe, 0xffff);
+  assert.equal(cleanText(malformed, 20), '\ufffdx\ufffd\ufffd\ufffd');
+  assert.equal(cleanText('A 🙂 & B', 20), 'A 🙂 & B');
+  const svg = buildSheet({ title: malformed, credit: malformed, sources: malformed, panels: [{ caption: malformed }] });
+  assert.doesNotThrow(() => encodeURIComponent(svg), 'PNG data URL encoding must accept the exported text');
+  assert.doesNotMatch(svg, /[\ufffe\uffff]/, 'SVG text must contain no forbidden BMP noncharacters');
+  assert.match(svg, /\ufffdx\ufffd\ufffd\ufffd/);
+});
+
 test('stroke coordinates, colors and amount cannot escape the drawing boundary', () => {
   assert.deepEqual(safeStrokes([{ color: '#172d32', points: [[-2, 3], [NaN, 1], [Infinity, 0]] }, { color: 'url(https://example.com)', points: [[0, 0]] }]), [{ color: '#172d32', points: [[0, 1]] }]);
   const strokes = safeStrokes(Array.from({ length: 200 }, () => ({ color: '#e46d2e', points: Array.from({ length: 500 }, () => [0.5, 0.5]) })));
