@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1560" viewBox="0 0 900 1560" role="img" aria-labelledby="title desc">
+<title id="title">Two settings changed: a dated Gemini Apps energy comparison</title>
+<desc id="desc">Google’s May 2025 aggregate estimates are 0.10 and 0.24 watt-hours per text prompt under different methods. The narrower method counts active accelerators and samples the most efficient ten percent of data centers. The comprehensive method includes the serving stack across the fleet. The ratio includes both changes, so it does not isolate overhead alone. Source: Google paper section 3.2 and Table 1, August 2025. Provider-authored historical study, not a current measurement or independent replication.</desc>
+<rect width="900" height="1560" fill="#fff9eb"/>
+<rect x="54" y="419" width="378" height="225" rx="18" fill="#ffffff" stroke="#172d32" stroke-width="3"/>
+<rect x="468" y="419" width="378" height="225" rx="18" fill="#f7ead4" stroke="#172d32" stroke-width="3"/>
+<path d="M54 678H846M54 877H846" stroke="#abb8ad" stroke-width="2"/>
+<path d="M450 758V1048" stroke="#abb8ad" stroke-width="2"/>
+<rect x="54" y="1086" width="792" height="170" rx="18" fill="#f7ead4"/>
+<g font-family="Arial,sans-serif" fill="#172d32">
+<text x="54" y="74" font-size="27" font-weight="700" fill="#172d32">READING A DATED ENERGY COMPARISON</text>
+<text x="50" y="165" font-size="76" font-weight="800" fill="#172d32">TWO SETTINGS</text>
+<text x="50" y="252" font-size="76" font-weight="800" fill="#172d32">CHANGED.</text>
+<text x="54" y="315" font-size="35" font-weight="400" fill="#172d32">Gemini Apps text prompts · May 2025</text>
+<text x="54" y="376" font-size="29" font-weight="700" fill="#172d32">REPORTED Wh / TEXT PROMPT</text>
+<text x="243" y="555" font-size="112" font-weight="800" fill="#172d32" text-anchor="middle">0.10</text>
+<text x="657" y="555" font-size="112" font-weight="800" fill="#172d32" text-anchor="middle">0.24</text>
+<text x="243" y="608" font-size="29" font-weight="700" fill="#172d32" text-anchor="middle">NARROWER METHOD</text>
+<text x="657" y="608" font-size="29" font-weight="700" fill="#172d32" text-anchor="middle">COMPREHENSIVE</text>
+<text x="54" y="716" font-size="29" font-weight="700" fill="#172d32">MEASUREMENT SCOPE</text>
+<text x="74" y="782" font-size="38" font-weight="700" fill="#172d32">Active AI</text>
+<text x="74" y="831" font-size="38" font-weight="700" fill="#172d32">accelerators</text>
+<text x="488" y="782" font-size="38" font-weight="700" fill="#172d32">Serving</text>
+<text x="488" y="831" font-size="38" font-weight="700" fill="#172d32">stack</text>
+<text x="54" y="920" font-size="29" font-weight="700" fill="#172d32">DATA-CENTER SAMPLE</text>
+<text x="74" y="985" font-size="34" font-weight="700" fill="#172d32">Most efficient</text>
+<text x="74" y="1032" font-size="34" font-weight="700" fill="#172d32">10% of data centers</text>
+<text x="488" y="985" font-size="34" font-weight="700" fill="#172d32">Across the fleet</text>
+<text x="80" y="1150" font-size="49" font-weight="700" fill="#172d32">The ratio includes</text>
+<text x="80" y="1212" font-size="49" font-weight="700" fill="#172d32">both changes.</text>
+<text x="54" y="1302" font-size="32" font-weight="400" fill="#172d32">Serving stack adds host CPU/DRAM,</text>
+<text x="54" y="1348" font-size="32" font-weight="400" fill="#172d32">idle capacity and data-center overhead.</text>
+<text x="54" y="1430" font-size="29" font-weight="400" fill="#172d32">Google paper · §3.2 + Table 1 · Aug 2025</text>
+<text x="54" y="1474" font-size="29" font-weight="400" fill="#172d32">arXiv:2508.15734v1</text>
+<text x="54" y="1518" font-size="28" font-weight="400" fill="#172d32">Provider-authored study; not a current reading.</text>
+</g>
+</svg>

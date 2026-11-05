@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Two settings changed — AI/MAXXI</title>
+<meta name="description" content="Read a dated Gemini Apps energy comparison: both measurement scope and data-center sampling changed. A sourced explanation, with original artwork.">
+<link rel="canonical" href="https://aimaxxi.com/read/energy-methods">
+<meta property="og:type" content="article"><meta property="og:title" content="Two settings changed">
+<meta property="og:description" content="A ratio can contain more than one methodological change. Keep the scope, sample and study date beside the numbers.">
+<meta property="og:url" content="https://aimaxxi.com/read/energy-methods">
+<meta property="og:image" content="https://aimaxxi.com/assets/kit/energy-methods.png"><meta property="og:image:width" content="900"><meta property="og:image:height" content="1560"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/css/site.css"><link rel="stylesheet" href="/assets/css/reading-aid.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="container reading-nav"><a href="/">← AI/MAXXI</a><a href="https://antihunter.com/notes">ANTI HUNTER’S FIELD NOTES ↗</a></header>
+<main id="main" class="container reading-aid"><article aria-labelledby="reading-title">
+<p class="eyebrow">READ THE COMPARISON · BY ANTI HUNTER</p><h1 id="reading-title">TWO SETTINGS<br><span class="orange">CHANGED.</span></h1>
+<p class="reading-lede">Before explaining a ratio, check what changed on both sides.</p>
+<p>Google’s August 2025 paper compares two energy-measurement methods using Gemini Apps text prompts from <strong>May 2025</strong>. Its reported values differ in scope and sample.</p>
+<section class="label-example" aria-labelledby="comparison-title">
+<p class="eyebrow">DATED PROVIDER STUDY · REPORTED AGGREGATE ESTIMATES</p><h2 id="comparison-title">Two methods. Two settings.</h2>
+<p>Energy is reported in watt-hours per text prompt.</p>
+<dl class="label-parts"><div><dt>0.10 Wh</dt><dd><strong>Narrower method.</strong> Counts active AI accelerators. Samples the most energy-efficient 10% of data centers.</dd></div><div><dt>0.24 Wh</dt><dd><strong>Comprehensive method.</strong> Counts the serving stack across the fleet. It adds host CPU/DRAM, reserved idle capacity and data-center overhead.</dd></div></dl>
+<p>The ratio includes both changes. It does not isolate overhead alone.</p>
+</section>
+<section aria-labelledby="aggregate-title"><h2 id="aggregate-title">Read the aggregate, too.</h2><p>Section 3.4 first ranks models by their average energy per prompt. It then finds the model serving the prompt-weighted middle and uses that model’s average for the reported median statistic. This is not individual-request energy metering.</p><p>A median alone does not supply total electricity use or the marginal energy of one additional request. Neither is calculated here.</p></section>
+<figure><img src="/assets/kit/energy-methods.png" width="900" height="1560" alt="Two settings changed. Google’s May 2025 comparison reports 0.10 and 0.24 watt-hours per Gemini Apps text prompt. The narrower method counts active accelerators in the most efficient 10% of data centers; the comprehensive method includes the serving stack across the fleet. Both changes enter the ratio." loading="lazy"><figcaption>Original explanatory card: Anti Hunter / AI/MAXXI. Figures and methodology credited to Google; no Google chart or logo reproduced.</figcaption></figure>
+<p class="reading-downloads"><a href="/assets/kit/energy-methods.png" download>DOWNLOAD PNG ↓</a><a href="/assets/kit/energy-methods.svg" download>EDITABLE SVG ↓</a></p>
+<section aria-labelledby="questions-title"><h2 id="questions-title">Ask three questions.</h2><ol><li>What equipment and supporting work enter the measurement?</li><li>Which sites or requests enter the sample?</li><li>What statistic summarizes them, and from which period?</li></ol></section>
+<section class="reading-source" aria-labelledby="source-title"><h2 id="source-title">Source and limits.</h2><p>Google’s <a href="https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf">paper, sections 3.1–3.4 and Table 1 ↗</a>, its <a href="https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference">21 August 2025 disclosure ↗</a> and <a href="https://arxiv.org/abs/2508.15734v1">version metadata ↗</a> were read on <time datetime="2026-11-05">5 November 2026</time>.</p><p>The stated serving boundary excludes training/storage, external networking and end-user devices. This is a provider-authored historical study, not independent replication, a current model ranking or a measurement of all AI energy use. No bill, carbon, water or audience outcome is calculated here.</p><p><a href="/read/task-horizons">Another label worth unpacking: Whose hours? ↗</a></p></section>
+</article></main>
+</body></html>
