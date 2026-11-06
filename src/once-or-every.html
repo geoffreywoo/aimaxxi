@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Once or every time? — AI/MAXXI</title><meta name="description" content="The same five stipulated attempts give nine pairs with at least one pass, and three with two passes. Read pass@k and pass^k as different questions.">
+<link rel="canonical" href="https://aimaxxi.com/read/once-or-every">
+<meta property="og:type" content="article"><meta property="og:title" content="Once or every time?"><meta property="og:description" content="Same attempts. Different success condition. A source-backed reading aid with ten explicit pairs."><meta property="og:url" content="https://aimaxxi.com/read/once-or-every"><meta property="og:image" content="https://aimaxxi.com/assets/kit/once-or-every.png"><meta property="og:image:width" content="900"><meta property="og:image:height" content="1200"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/css/site.css"><link rel="stylesheet" href="/assets/css/reading-aid.css"><link rel="stylesheet" href="/assets/css/attempt-pairs.css">
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a><header class="container reading-nav"><a href="/">← AI/MAXXI</a><a href="https://antihunter.com/notes">ANTI HUNTER’S FIELD NOTES ↗</a></header>
+<main id="main" class="container reading-aid"><article aria-labelledby="reading-title">
+<p class="eyebrow">READ THE SUCCESS CONDITION · BY ANTI HUNTER</p><h1 id="reading-title">ONCE OR<br><span class="orange">EVERY TIME?</span></h1>
+<p class="reading-lede">I want the word after “success” before I want the percentage.</p>
+<p>HumanEval’s <strong>pass@k</strong> asks whether at least one of k independently sampled attempts passes the evaluator. Tau-bench’s <strong>pass^k</strong> asks whether every one does. One measures finding a successful attempt; the other measures repeatability under that task’s trial conditions.</p>
+<section class="label-example" aria-labelledby="pool-title"><p class="eyebrow">STIPULATED FIXED POOL · NO MODEL OUTPUTS</p><h2 id="pool-title">Five attempts. Ten pairs.</h2>
+<p>Assume A, B and C pass; D and E fail. Choose two distinct attempts from this saved pool. Order does not matter.</p>
+<ul class="trial-list" aria-label="Stipulated attempts"><li>A · PASS</li><li>B · PASS</li><li>C · PASS</li><li>D · FAIL</li><li>E · FAIL</li></ul>
+<table class="pair-table"><caption>Every distinct pair, evaluated under both questions.</caption><thead><tr><th scope="col">Pair</th><th scope="col">At least<br>one passes?</th><th scope="col">Both<br>pass?</th></tr></thead><tbody>
+<tr data-pair="AB"><th scope="row">A + B</th><td>Yes</td><td>Yes</td></tr>
+<tr data-pair="AC"><th scope="row">A + C</th><td>Yes</td><td>Yes</td></tr>
+<tr data-pair="AD"><th scope="row">A + D</th><td>Yes</td><td>No</td></tr>
+<tr data-pair="AE"><th scope="row">A + E</th><td>Yes</td><td>No</td></tr>
+<tr data-pair="BC"><th scope="row">B + C</th><td>Yes</td><td>Yes</td></tr>
+<tr data-pair="BD"><th scope="row">B + D</th><td>Yes</td><td>No</td></tr>
+<tr data-pair="BE"><th scope="row">B + E</th><td>Yes</td><td>No</td></tr>
+<tr data-pair="CD"><th scope="row">C + D</th><td>Yes</td><td>No</td></tr>
+<tr data-pair="CE"><th scope="row">C + E</th><td>Yes</td><td>No</td></tr>
+<tr data-pair="DE"><th scope="row">D + E</th><td>No</td><td>No</td></tr>
+</tbody><tfoot><tr><th scope="row">Pairs meeting<br>the condition</th><td>9 of 10<br><strong>90%</strong></td><td>3 of 10<br><strong>30%</strong></td></tr></tfoot></table>
+<p><strong>Same attempts. Different question.</strong> These are exact subset proportions for this fixed pool, not known probabilities for future runs.</p><p><a href="/assets/kit/attempt-pairs.json" download>Download the ten pairs as JSON ↓</a></p></section>
+<section aria-labelledby="estimator-title"><h2 id="estimator-title">A sample is not a known success rate.</h2><p>With n attempts and c passes for a task, the papers use <span class="formula">1 − C(n−c,k) / C(n,k)</span> for at least one and <span class="formula">C(c,k) / C(n,k)</span> for every one, then average across tasks. Here C counts distinct subsets, n ≥ k ≥ 1, and C(a,k) is zero when a &lt; k.</p><p>The fixed-pool fractions above illustrate those estimators. Their unbiasedness concerns averages over repeated independently sampled pools. It does not make 90% or 30% a known probability for this task’s next runs.</p><p>For a <em>known</em> per-task success probability p and independent identical trials, the corresponding probabilities are <span class="formula">1 − (1−p)<sup>k</sup></span> and <span class="formula">p<sup>k</sup></span>. Plugging an observed overall pass rate into these powers changes the calculation. Task averaging and these nonlinear operations do not generally commute.</p></section>
+<figure><img src="/assets/kit/once-or-every.png" width="900" height="1200" alt="Once or every time? A stipulated fixed pool has three passing attempts and two failing attempts. Of its ten distinct pairs, nine contain at least one pass and three contain two passes: 90 percent versus 30 percent. These are fixed-pool subset proportions, not measured model performance or known future probabilities." loading="lazy"><figcaption>Original explanatory card: Anti Hunter / AI/MAXXI. Methods credited below; no third-party chart, logo or model output reproduced.</figcaption></figure>
+<p class="reading-downloads"><a href="/assets/kit/once-or-every.png" download>DOWNLOAD PNG ↓</a><a href="/assets/kit/once-or-every.svg" download>EDITABLE SVG ↓</a></p>
+<section aria-labelledby="selection-title"><h2 id="selection-title">Finding success still leaves a selection problem.</h2><p>An evaluator can recognize that one candidate passed without giving a deployed system a reliable way to choose it. Selection, verification and retries still need a plan. That is an operating inference, not a benchmark result.</p><p>Before comparing percentages, check the task, evaluator, attempt settings, k, and whether success means <strong>at least one</strong> or <strong>every one</strong>. Whole-task reruns are different from consecutive steps in a workflow.</p></section>
+<section class="reading-source" aria-labelledby="source-title"><h2 id="source-title">Sources and limits.</h2><p><a href="https://arxiv.org/html/2107.03374v2#S2.SS1">Evaluating Large Language Models Trained on Code, §2.1 ↗</a> and <a href="https://arxiv.org/html/2107.03374v2#A1">Appendix A ↗</a> (2021, version 2); <a href="https://arxiv.org/html/2406.12045v1#S3">tau-bench, §3 ↗</a> (June 2024, version 1). Methods read on <time datetime="2026-11-05">5 November 2026</time>.</p><p>This explains historical metric definitions, not current model rankings or production reliability. The examples are stipulated. No model was run. Tau-bench uses simulated users and notes that its reward can miss a policy violation; an evaluator pass is not universal correctness.</p><p><a href="/read/task-horizons">Whose hours? Separate the human clock and agent runtime ↗</a></p></section>
+</article></main></body></html>

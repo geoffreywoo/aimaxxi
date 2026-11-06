@@ -1,0 +1,125 @@
+{
+  "title": "Once or every time?",
+  "scope": "Stipulated fixed pool; no model outputs or future success probability.",
+  "trials": [
+    {
+      "id": "A",
+      "passes": true
+    },
+    {
+      "id": "B",
+      "passes": true
+    },
+    {
+      "id": "C",
+      "passes": true
+    },
+    {
+      "id": "D",
+      "passes": false
+    },
+    {
+      "id": "E",
+      "passes": false
+    }
+  ],
+  "pairs": [
+    {
+      "id": "AB",
+      "attempts": [
+        "A",
+        "B"
+      ],
+      "atLeastOne": true,
+      "every": true
+    },
+    {
+      "id": "AC",
+      "attempts": [
+        "A",
+        "C"
+      ],
+      "atLeastOne": true,
+      "every": true
+    },
+    {
+      "id": "AD",
+      "attempts": [
+        "A",
+        "D"
+      ],
+      "atLeastOne": true,
+      "every": false
+    },
+    {
+      "id": "AE",
+      "attempts": [
+        "A",
+        "E"
+      ],
+      "atLeastOne": true,
+      "every": false
+    },
+    {
+      "id": "BC",
+      "attempts": [
+        "B",
+        "C"
+      ],
+      "atLeastOne": true,
+      "every": true
+    },
+    {
+      "id": "BD",
+      "attempts": [
+        "B",
+        "D"
+      ],
+      "atLeastOne": true,
+      "every": false
+    },
+    {
+      "id": "BE",
+      "attempts": [
+        "B",
+        "E"
+      ],
+      "atLeastOne": true,
+      "every": false
+    },
+    {
+      "id": "CD",
+      "attempts": [
+        "C",
+        "D"
+      ],
+      "atLeastOne": true,
+      "every": false
+    },
+    {
+      "id": "CE",
+      "attempts": [
+        "C",
+        "E"
+      ],
+      "atLeastOne": true,
+      "every": false
+    },
+    {
+      "id": "DE",
+      "attempts": [
+        "D",
+        "E"
+      ],
+      "atLeastOne": false,
+      "every": false
+    }
+  ],
+  "totalDistinctPairs": 10,
+  "atLeastOnePairs": 9,
+  "everyPairPasses": 3,
+  "sources": [
+    "https://arxiv.org/html/2107.03374v2#S2.SS1",
+    "https://arxiv.org/html/2406.12045v1#S3"
+  ]
+}
