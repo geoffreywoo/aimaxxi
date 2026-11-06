@@ -81,6 +81,9 @@ await writeFile(path.join(energyDir, 'index.html'), await readFile(path.join(roo
 const attemptsDir = path.join(dist, 'read/once-or-every');
 await mkdir(attemptsDir, {recursive:true});
 await writeFile(path.join(attemptsDir, 'index.html'), await readFile(path.join(root, 'src/once-or-every.html'), 'utf8'));
-const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, `${config.url}/life-after-scarcity/make`, `${config.url}/life-after-scarcity/cast`, `${config.url}/read/task-horizons`, `${config.url}/read/energy-methods`, `${config.url}/read/once-or-every`, ...manifestoURLs];
+const memoDir = path.join(dist, 'memos/human-footnotes');
+await mkdir(memoDir, {recursive:true});
+await writeFile(path.join(memoDir, 'index.html'), await readFile(path.join(root, 'src/human-footnotes.html'), 'utf8'));
+const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, `${config.url}/life-after-scarcity/make`, `${config.url}/life-after-scarcity/cast`, `${config.url}/read/task-horizons`, `${config.url}/read/energy-methods`, `${config.url}/read/once-or-every`, `${config.url}/memos/human-footnotes`, ...manifestoURLs];
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicURLs.map(url => `<url><loc>${escapeHTML(url)}</loc></url>`).join('')}</urlset>\n`);
 console.log('Built static site in dist/. No server or browser runtime dependencies.');
