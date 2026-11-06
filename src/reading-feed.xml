@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Source reading — AI/MAXXI</title>
+    <link>https://aimaxxi.com/#ceo</link>
+    <description>Short guides to reading AI claims. Linked articles retain their dated sources and examples. Fiction has a separate archive.</description>
+    <language>en</language>
+    <atom:link href="https://aimaxxi.com/read/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Once or every time?</title>
+      <link>https://aimaxxi.com/read/once-or-every</link>
+      <guid isPermaLink="true">https://aimaxxi.com/read/once-or-every</guid>
+      <description>One stipulated pool, two questions: whether at least one attempt passes or every chosen attempt passes.</description>
+    </item>
+    <item>
+      <title>Two settings changed</title>
+      <link>https://aimaxxi.com/read/energy-methods</link>
+      <guid isPermaLink="true">https://aimaxxi.com/read/energy-methods</guid>
+      <description>Keep the scope and sample attached to historical per-prompt energy figures.</description>
+    </item>
+    <item>
+      <title>Whose hours?</title>
+      <link>https://aimaxxi.com/read/task-horizons</link>
+      <guid isPermaLink="true">https://aimaxxi.com/read/task-horizons</guid>
+      <description>Separate a human task-duration reference from agent runtime and a fitted success threshold.</description>
+    </item>
+  </channel>
+</rss>
