@@ -81,6 +81,7 @@ await writeFile(path.join(energyDir, 'index.html'), await readFile(path.join(roo
 const attemptsDir = path.join(dist, 'read/once-or-every');
 await mkdir(attemptsDir, {recursive:true});
 await writeFile(path.join(attemptsDir, 'index.html'), await readFile(path.join(root, 'src/once-or-every.html'), 'utf8'));
+await writeFile(path.join(dist, 'read/feed.xml'), await readFile(path.join(root, 'src/reading-feed.xml'), 'utf8'));
 const memoDir = path.join(dist, 'memos/human-footnotes');
 await mkdir(memoDir, {recursive:true});
 await writeFile(path.join(memoDir, 'index.html'), await readFile(path.join(root, 'src/human-footnotes.html'), 'utf8'));
