@@ -1,0 +1,73 @@
+{
+  "title": "First, match the campus.",
+  "author": "Anti Hunter / AI/MAXXI",
+  "purpose": "Source-reading exercise; no current project-status or numerical shortfall finding.",
+  "checkedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "owner",
+      "label": "OWNER ANNOUNCEMENT",
+      "project": "Meta · Richland Parish, Louisiana / Hyperion",
+      "date": "13 July 2026",
+      "quantityQuote": "5 GW in compute capacity",
+      "body": "Meta announces an expansion of its Richland Parish data center and says the site will house Hyperion. The wording is the owner’s announced expansion scope. This passage does not define the detailed electrical-load boundary or establish a measured current draw.",
+      "sourceURL": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+      "sourceLocator": "Opening paragraph below the dated heading."
+    },
+    {
+      "id": "performance",
+      "label": "UTILITY PERFORMANCE REPORT",
+      "project": "Hut 8 · River Bend, southeast Louisiana",
+      "date": "2025 report · original publication day unestablished",
+      "quantityQuote": "initial 330 megawatts of utility capacity",
+      "body": "Entergy’s report describes Hut 8’s River Bend campus, then says the utility will provide this amount. The enclosing paragraph supplies the project identity. The future tense also matters.",
+      "sourceURL": "https://www.entergy.com/wp-content/uploads/2026/03/2025-Performance-Report.pdf#page=14",
+      "sourceLocator": "Printed page 14, middle column, paragraph beginning with Hut 8 in December 2025."
+    },
+    {
+      "id": "approval",
+      "label": "UTILITY REPORT OF APPROVAL",
+      "project": "Meta · Richland Parish data center",
+      "date": "20 August 2025",
+      "quantityQuote": null,
+      "body": "Entergy reports LPSC approval for three generating facilities. It forecasts two Richland Parish facilities online in late 2028 and a Waterford facility in St. Charles Parish operational by the end of 2029. This older release describes approval and forecasts; it does not reconcile their scope with Meta’s later expansion announcement.",
+      "sourceURL": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+      "sourceLocator": "Opening paragraph and paragraph describing three combined-cycle facilities."
+    }
+  ],
+  "exercise": {
+    "question": "Can the 330 MW sentence establish utility service for Meta’s announced expansion?",
+    "answer": "No. Its paragraph names Hut 8’s River Bend campus. A shared utility, a shared state and a shared report page do not make it Meta’s Richland Parish project.",
+    "secondQuestion": "Does the older Meta-related approval report settle the expansion’s current power supply?",
+    "secondAnswer": "No. The project connection is relevant, but approval, a forecast date and delivered campus power are different claims. These three documents leave the later expansion’s service quantity and phase coverage unresolved."
+  },
+  "method": {
+    "title": "Keep four labels beside the number.",
+    "items": [
+      {
+        "label": "Project",
+        "text": "Which campus, location and phase does the sentence actually name?"
+      },
+      {
+        "label": "Quantity",
+        "text": "Copy the capacity noun and its boundary. Compute capacity, utility service, generating capacity and metered demand need their own definitions."
+      },
+      {
+        "label": "Milestone",
+        "text": "Is this an announcement, approval, contract, construction report, forecast or measured delivery? Preserve the source’s tense."
+      },
+      {
+        "label": "Date",
+        "text": "Separate publication day, reported event and expected completion. Check whether a later expansion changed the scope."
+      }
+    ],
+    "closing": "A number can be accurate and still answer the wrong question. Match the project first; then establish compatible boundaries and milestones before calculating."
+  },
+  "limits": {
+    "title": "What this exercise establishes.",
+    "body": "The 330 MW passage belongs to River Bend. The 5 GW passage is Meta’s dated expansion announcement. The older utility release is relevant Meta context with dated forecasts. This exercise makes no finding about today’s energized capacity, utilization, connection status, delay or shortage. It is not a comprehensive project-status audit.",
+    "sourceAuthority": "The approval account comes from Entergy; the regulator’s order was not independently inspected. The performance PDF’s URL folder and file metadata do not establish its original publication day.",
+    "reviewDate": "7 November 2026",
+    "credit": "Original explanation and exercise: Anti Hunter / AI/MAXXI. Source statements credited above. No third-party chart or logo is reproduced."
+  }
+}
