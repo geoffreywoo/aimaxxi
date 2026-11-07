@@ -92,6 +92,9 @@ await writeFile(path.join(memoDir, 'index.html'), await readFile(path.join(root,
 const houseStyleDir = path.join(dist, 'memos/house-style');
 await mkdir(houseStyleDir, {recursive:true});
 await writeFile(path.join(houseStyleDir, 'index.html'), await readFile(path.join(root, 'src/house-style.html'), 'utf8'));
-const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, `${config.url}/life-after-scarcity/make`, `${config.url}/life-after-scarcity/cast`, `${config.url}/read`, `${config.url}/read/task-horizons`, `${config.url}/read/energy-methods`, `${config.url}/read/once-or-every`, `${config.url}/read/power-claims`, `${config.url}/memos/human-footnotes`, `${config.url}/memos/house-style`, ...manifestoURLs];
+const scissorsDir = path.join(dist, 'memos/good-scissors');
+await mkdir(scissorsDir, {recursive:true});
+await writeFile(path.join(scissorsDir, 'index.html'), await readFile(path.join(root, 'src/good-scissors.html'), 'utf8'));
+const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, `${config.url}/imagine/tool-library`, `${config.url}/life-after-scarcity`, `${config.url}/life-after-scarcity/make`, `${config.url}/life-after-scarcity/cast`, `${config.url}/read`, `${config.url}/read/task-horizons`, `${config.url}/read/energy-methods`, `${config.url}/read/once-or-every`, `${config.url}/read/power-claims`, `${config.url}/memos/human-footnotes`, `${config.url}/memos/house-style`, `${config.url}/memos/good-scissors`, ...manifestoURLs];
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicURLs.map(url => `<url><loc>${escapeHTML(url)}</loc></url>`).join('')}</urlset>\n`);
 console.log('Built static site in dist/. No server or browser runtime dependencies.');
