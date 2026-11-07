@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Source reading — AI/MAXXI</title>
-    <link>https://aimaxxi.com/#ceo</link>
+    <link>https://aimaxxi.com/read</link>
     <description>Short guides to reading AI claims. Linked articles retain their dated sources and examples. Fiction has a separate archive.</description>
     <language>en</language>
     <atom:link href="https://aimaxxi.com/read/feed.xml" rel="self" type="application/rss+xml" />
