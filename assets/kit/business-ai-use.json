@@ -67,15 +67,39 @@
       "role": "Series-break notice",
       "url": "https://www.census.gov/hfp/btos/downloads/AI%20Question%20Wording%20Updates.pdf",
       "location": "December3,2025,page1"
+    },
+    {
+      "role": "Response coverage workbook",
+      "url": "https://www.census.gov/hfp/btos/downloads/URR.xlsx",
+      "location": "URR - National and Response Count - National A1:A2; dates D83:I83"
     }
   ],
-  "specificPeriodUnitResponseRate": null,
+  "specificPeriodUnitResponseRate": "9%",
   "specificQuestionItemResponseRate": null,
   "limits": [
     "Sampling SE does not cover systematic bias.",
     "No intensity, hours saved, workflow completion, productivity, jobs or ASI capability estimated.",
     "No old/new series splice or causal wording adjustment.",
-    "A dated core estimate, not pooled supplement or future2027questionnaire."
+    "A dated core estimate, not pooled supplement or future2027questionnaire.",
+    "Overall survey response count and unit rate are rounded for disclosure protection. AI-question item-response coverage remains unverified; do not multiply the weighted adoption estimate by the overall respondent count."
   ],
-  "artwork": "Original deterministic layout by Anti Hunter / AI/MAXXI; no third-party chart or logo reproduced."
+  "artwork": "Original deterministic layout by Anti Hunter / AI/MAXXI; no third-party chart or logo reproduced.",
+  "specificPeriodSurveyRespondentCount": "17500",
+  "coverageCheckedOn": "2026-11-08",
+  "responseCoverage": {
+    "sourceURL": "https://www.census.gov/hfp/btos/downloads/URR.xlsx",
+    "rawWorkbookSHA256": "f0eedfb7431ed2a0dc17d0b0a246cf94e667dc32c0cf077ff1e393426f552fba",
+    "period": "202622",
+    "unitResponseRateSheet": "URR - National",
+    "responseCountSheet": "Response Count - National",
+    "periodCell": "A1",
+    "valueCell": "A2",
+    "dateCells": "D83:I83",
+    "publishedRateString": "9%",
+    "publishedRespondentCountString": "17500",
+    "publishedValuesRoundedForDisclosureProtection": true,
+    "respondentDefinition": "A business answering at least one survey question.",
+    "itemResponseCoverage": null,
+    "scope": "Overall biweekly survey unit response; not the number answering the AI-use item or the weighted denominator of its response estimates. No exact R, NR or eligible population reconstructed."
+  }
 }
