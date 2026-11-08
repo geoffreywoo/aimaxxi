@@ -1,0 +1,81 @@
+{
+  "title": "What counts as use?",
+  "compiledBy": "Anti Hunter / AI/MAXXI",
+  "source": "U.S. Census Bureau Business Trends and Outlook Survey",
+  "readOn": "2026-11-07",
+  "series": "National core, current business-use question",
+  "period": "202622",
+  "tableQuestionID": 7,
+  "instrumentItem": 24,
+  "referencePeriod": [
+    "2026-10-05",
+    "2026-10-18"
+  ],
+  "collectionPeriod": [
+    "2026-10-19",
+    "2026-11-01"
+  ],
+  "publishedOn": "2026-11-05",
+  "questionParaphrase": "Whether the business used SI, formerly AI, in any business function during the reference interval.",
+  "unit": "In-scope employer business; weighted business responses, not workers, tasks or hours.",
+  "denominator": "Sum of nonresponse-adjusted weights of businesses answering this question, including Do not know.",
+  "answers": [
+    {
+      "answer": "Yes",
+      "estimatePercent": 24.2,
+      "standardErrorPercentagePoints": 0.61,
+      "estimateCell": "E16",
+      "standardErrorCell": "E16"
+    },
+    {
+      "answer": "No",
+      "estimatePercent": 61.9,
+      "standardErrorPercentagePoints": 0.78,
+      "estimateCell": "E17",
+      "standardErrorCell": "E17"
+    },
+    {
+      "answer": "Do not know",
+      "estimatePercent": 13.9,
+      "standardErrorPercentagePoints": 0.27,
+      "estimateCell": "E18",
+      "standardErrorCell": "E18"
+    }
+  ],
+  "estimatesSheet": "Response Estimates",
+  "standardErrorsSheet": "Response Standard Errors",
+  "dateSheet": "Collection and Reference Dates",
+  "dateCells": "D83:I83",
+  "rawWorkbookSHA256": "019cc3fff1ac2a985f27741084777780c4f9c7899a26b29dcf49392cad643f59",
+  "primarySources": [
+    {
+      "role": "Workbook",
+      "url": "https://www.census.gov/hfp/btos/downloads/National.xlsx",
+      "location": "Question7, columnE, rows16–18; dates row83"
+    },
+    {
+      "role": "Matched fielded instrument",
+      "url": "https://www.census.gov/hfp/btos/downloads/BTOS%20Content%20V5%20Core%20and%20SI%20Instrument%20-%20Cycle%202-Tagged.pdf",
+      "location": "Pages1 and6, item24"
+    },
+    {
+      "role": "Methodology",
+      "url": "https://www.census.gov/hfp/btos/downloads/methodology/Business_Trends_and_Outlook_Survey_Methodology_V6.pdf",
+      "location": "Pages1,4–5,7–8; filenameV6/documentVersion5"
+    },
+    {
+      "role": "Series-break notice",
+      "url": "https://www.census.gov/hfp/btos/downloads/AI%20Question%20Wording%20Updates.pdf",
+      "location": "December3,2025,page1"
+    }
+  ],
+  "specificPeriodUnitResponseRate": null,
+  "specificQuestionItemResponseRate": null,
+  "limits": [
+    "Sampling SE does not cover systematic bias.",
+    "No intensity, hours saved, workflow completion, productivity, jobs or ASI capability estimated.",
+    "No old/new series splice or causal wording adjustment.",
+    "A dated core estimate, not pooled supplement or future2027questionnaire."
+  ],
+  "artwork": "Original deterministic layout by Anti Hunter / AI/MAXXI; no third-party chart or logo reproduced."
+}
